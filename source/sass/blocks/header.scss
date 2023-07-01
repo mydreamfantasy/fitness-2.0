@@ -1,0 +1,29 @@
+.header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-nav {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__logo {
+  display: block;
+}
+
+.header-nav__phone {
+  margin: 0;
+  padding: 0;
+  margin-top: -6px;
+  color: $color-default-white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}

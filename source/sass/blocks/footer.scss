@@ -1,0 +1,41 @@
+.footer {
+  background-color: $footer-color;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 44px 0 32px;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.footer__item {
+  & a {
+    color: $color-default-white;
+  }
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.footer__social-item {
+}
