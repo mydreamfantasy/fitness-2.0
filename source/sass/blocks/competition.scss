@@ -1,0 +1,87 @@
+.competition {
+  padding-top: 77px;
+}
+
+.competition__wrapper {
+  background-color: $torch-red;
+  padding: 85px 78px;
+}
+
+.competition__wrap {
+  display: flex;
+}
+
+.competition__containter {
+  display: flex;
+  gap: 29px;
+  padding-bottom: 15px;
+}
+
+.competition__title {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  color: $color-default-white;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  letter-spacing: 2.46px;
+}
+
+.competition__subtitle {
+  padding: 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+
+  &:last-of-type {
+    margin-bottom: 36px;
+  }
+}
+
+.competition__time {
+  padding: 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.competition__text {
+  padding: 0;
+  margin: 0;
+  color: $color-default-white;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.comtetition__link {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  padding: 16px 53px;
+  color: $color-default-white;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  border: 2px solid $color-default-white;
+  text-transform: uppercase;
+}
+
+.competition__image {
+  padding: 0;
+  margin: 0;
+  & img {
+    display: block;
+    width: 386px;
+    height: 292px;
+  }
+}

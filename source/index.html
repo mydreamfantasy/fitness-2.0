@@ -18,16 +18,8 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header-nav">
-          <a class="header-nav__logo" href="#">
-            <img
-              src="img/header/logo.svg"
-              alt="Логотип фитнес центра."
-              width="122"
-              height="44"
-          /></a>
-          <a class="header-nav__phone" href="tel:+78005555555"
-            >8-800-555-55-55</a
-          >
+          <a class="header-nav__logo" href="#"> <img src="img/header/logo.svg" alt="Логотип фитнес центра." width="122" height="44" /></a>
+          <a class="header-nav__phone" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
       </header>
       <main class="main">
@@ -48,14 +40,7 @@
             <a href="#" class="main-banner__button">Купить абонимент</a>
           </div>
           <div class="main-banner__img-wrapper">
-            <img
-              class="main-banner__img"
-              src="img/header/main-banner.png"
-              alt="Спортсмен"
-              srcset="img/header/main-banner@2x.png 2x"
-              height="556"
-              width="500"
-            />
+            <img class="main-banner__img" src="img/header/main-banner.png" alt="Спортсмен" srcset="img/header/main-banner@2x.png 2x" height="556" width="500" />
           </div>
         </section>
         <section class="container main-gym">
@@ -63,48 +48,126 @@
             <h2 class="main-gym__title">Тренажерный зал</h2>
             <p class="main-gym__subtitle">Просторный зал площадью 900 кв/м</p>
             <p class="main-gym__text">
-              Supergym – самый большой фитнес центр за Уралом и идеальное место
-              для укрепления тела и здоровья. Тренажерный зал оснащен всем
-              необходимым современным оборудованием для всех спортсменов.
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
             </p>
             <p class="main-gym__text">
-              В зале расположены отдельная зона для Crossfit и кардио-зона с 40
-              тренажерами. Также в фитнес центре есть несколько оборудованных
-              залов для различных видов групповых занятий.
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
             </p>
           </div>
           <div class="main-gym__block">
-            <img
-              class="main-gym__photo"
-              src="img/gym-photo.png"
-              alt="Спортзал"
-              srcset="img/gym-photo.png 2x"
-              height="660"
-              width="401"
-            />
+            <img class="main-gym__photo" src="img/gym-photo.png" alt="Спортзал" srcset="img/gym-photo@2x.png 2x" height="660" width="401" />
+            <div class="main-gym__video">
+              <div class="main-gym__video-img">
+                <img src="img/video-preview.png" alt="Спортзал" srcset="img/video-preview@2x.png 2x" height="660" width="401" />
+              </div>
+
+              <iframe
+                class="main-gym__video-video"
+                width="364"
+                height="228"
+                src="https://www.youtube.com/embed/9TZXsZItgdw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-          <div class="main-gym__video">
-            <iframe
-              width="364"
-              height="228"
-              src="https://www.youtube.com/embed/9TZXsZItgdw"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+        </section>
+        <section class="subscription">
+          <h2 class="subscription__title">Абонементы</h2>
+          <ul class="subscription__list">
+            <li class="subscription__item">
+              <button class="subscription__tab subscription__tab--active">1 месяц</button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__tab">6 месяцев</button>
+            </li>
+            <li class="subscription__item">
+              <button class="subscription__tab">12 месяцев</button>
+            </li>
+          </ul>
+          <ul class="subscription__sub-list">
+            <li class="subscription__sub-item">
+              <h3 class="subscription__sub-title">С тренером</h3>
+              <p class="subscription__sub-text">12 занятий</p>
+              <div class="subscription__sub-wrapper">
+                <p class="subscription__sub-price">
+                  5000
+                  <img src="img/rubble.png" alt="Рубль" srcset="img/rubble@2x.png 2x" height="30" width="42" />
+                </p>
+                <span class="subscription__sub-price__back">5000</span>
+              </div>
+
+              <a href="#" class="subscription__sub-button">Купить абонимент</a>
+            </li>
+            <li class="subscription__sub-item subscription__sub-item--active">
+              <h3 class="subscription__sub-title">Дневной</h3>
+              <p class="subscription__sub-text">с 8:00 до 17:00</p>
+              <div class="subscription__sub-wrapper">
+                <p class="subscription__sub-price">
+                  1700
+                  <img src="img/rubble.png" alt="Рубль" srcset="img/rubble@2x.png 2x" height="30" width="42" />
+                </p>
+                <span class="subscription__sub-price__back">1700</span>
+              </div>
+
+              <a href="#" class="subscription__sub-button subscription__sub-button--active">Купить абонимент</a>
+            </li>
+
+            <li class="subscription__sub-item">
+              <h3 class="subscription__sub-title">Полный день</h3>
+              <p class="subscription__sub-text">с 8:00 до 22:00</p>
+              <div class="subscription__sub-wrapper">
+                <p class="subscription__sub-price">
+                  2700
+                  <img src="img/rubble.png" alt="Рубль" srcset="img/rubble@2x.png 2x" height="30" width="42" />
+                </p>
+                <span class="subscription__sub-price__back">2700</span>
+              </div>
+
+              <a href="#" class="subscription__sub-button">Купить абонимент</a>
+            </li>
+          </ul>
+        </section>
+        <section class="competition container">
+          <div class="competition__wrap">
+            <div class="competition__wrapper">
+              <div class="competition__containter">
+                <h2 class="competition__title">
+                  Super <br />
+                  games
+                </h2>
+                <div>
+                  <p class="competition__subtitle">Дата</p>
+                  <div>
+                    <p class="competition__time">7</p>
+                    <div>
+                      <p class="competition__text">Марта</p>
+                      <p class="competition__text">2019</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <p class="competition__subtitle">Время</p>
+                  <div>
+                    <p class="competition__time">12:00</p>
+                  </div>
+                </div>
+              </div>
+              <p class="competition__subtitle">Ежегодные соревнования по CrossFit</p>
+              <a href="#" class="comtetition__link">Заполнить заявку</a>
+            </div>
+            <div class="competition__image">
+              <img src="img/crossfit.png" alt="Кроссфит" srcset="img/crossfit@2x.png 2x" width="292" height="386" />
+            </div>
           </div>
         </section>
       </main>
       <footer class="footer">
         <div class="container footer__wrapper">
           <a class="footer__logo" href="#">
-            <img
-              src="img/header/logo.svg"
-              alt="Логотип фитнес центра."
-              width="88"
-              height="32"
-            />
+            <img src="img/header/logo.svg" alt="Логотип фитнес центра." width="88" height="32" />
           </a>
           <ul class="footer__list">
             <li class="footer__item"><a href="#">Услуги</a></li>

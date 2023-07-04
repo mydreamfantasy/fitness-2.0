@@ -11,14 +11,16 @@ $color-transparent: rgba(255, 255, 255, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 $footer-color: #030a1a;
 $gym-color: #102654;
+$subscription-color: #f8f9fc;
+$rose-color: #d10a42;
+$sub-text: #495a7d;
+$price: #103aae;
+$whisper: #e8e8e8;
+$torch-red: #ed0233;
 
 // Gradient
 
-$black-to-right: linear-gradient(
-  90deg,
-  rgba(0, 0, 0, 0.75) 0%,
-  rgba(0, 0, 0, 0) 75%
-);
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 
 // Typography
 // ---------------------------------
@@ -28,9 +30,9 @@ $fz-default: 16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble: "Rouble", "Arial", sans-serif;
+$ff-rouble: 'Rouble', 'Arial', sans-serif;
 
-$ff-roboto: "Roboto", "Arial", sans-serif;
+$ff-roboto: 'Roboto', 'Arial', sans-serif;
 
 // Animation
 // ---------------------------------

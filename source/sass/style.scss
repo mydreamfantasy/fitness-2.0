@@ -1,32 +1,34 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import 'vendor/normalize';
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import 'variables';
+@import 'mixins';
+@import 'global/fonts';
+@import 'global/reboot';
+@import 'global/utils';
+@import 'global/container';
 
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
-@import "blocks/header";
-@import "blocks/footer";
-@import "blocks/main-banner";
-@import "blocks/gym";
+@import 'blocks/btn';
+@import 'blocks/modal';
+@import 'blocks/custom-input';
+@import 'blocks/custom-toggle';
+@import 'blocks/custom-select';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/main-banner';
+@import 'blocks/gym';
+@import 'blocks/subscription';
+@import 'blocks/competition';
 
 // ---------------------------------
 

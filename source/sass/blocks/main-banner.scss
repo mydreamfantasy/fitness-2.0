@@ -2,11 +2,7 @@
   padding-top: 70px;
   display: flex;
   gap: 59px;
-  background: conic-gradient(
-    from 151deg at 16.03% 39.06%,
-    #003d85 32.23633825778961deg,
-    #b80027 313.3060026168823deg
-  );
+  background-image: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 .main-banner__wrapper {
@@ -23,7 +19,7 @@
   text-align: end;
   color: $color-default-white;
   font-size: 44px;
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-family: 'Alumni Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
