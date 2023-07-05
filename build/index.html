@@ -18,7 +18,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header-nav">
-          <a class="header-nav__logo" href="#"> <img src="img/header/logo.svg" alt="Логотип фитнес центра." width="122" height="44" /></a>
+          <a class="header-nav__logo" href="#">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/header/logo.svg" />
+              <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" />
+              <img class="header-nav__logo-img" src="img/header/logo-phone.svg" alt="Логотип фитнес центра." width="69" height="24" />
+            </picture>
+          </a>
           <a class="header-nav__phone" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
       </header>
@@ -43,7 +49,7 @@
             <img class="main-banner__img" src="img/header/main-banner.png" alt="Спортсмен" srcset="img/header/main-banner@2x.png 2x" height="556" width="500" />
           </div>
         </section>
-        <section class="container main-gym">
+        <section class="main-gym">
           <div class="main-gym__wrapper">
             <h2 class="main-gym__title">Тренажерный зал</h2>
             <p class="main-gym__subtitle">Просторный зал площадью 900 кв/м</p>
@@ -55,16 +61,21 @@
             </p>
           </div>
           <div class="main-gym__block">
-            <img class="main-gym__photo" src="img/gym-photo.png" alt="Спортзал" srcset="img/gym-photo@2x.png 2x" height="660" width="401" />
+            <picture>
+              <source media=" (min-width: 1366px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x" />
+              <source media="(min-width: 768px)" srcset="img/gym-photo-tablet.png 1x, img/gym-photo-tablet@2x.png 2x" />
+              <img class="main-gym__photo" src="img/gym-photo-phone.png" alt="Спортзал" srcset="img/gym-photo-phone@2x.png 2x" height="320" width="313" />
+            </picture>
+
             <div class="main-gym__video">
               <div class="main-gym__video-img">
-                <img src="img/video-preview.png" alt="Спортзал" srcset="img/video-preview@2x.png 2x" height="660" width="401" />
+                <picture>
+                  <img src="img/video-preview.png" alt="Спортзал" srcset="img/video-preview@2x.png 2x" height="660" width="401" />
+                </picture>
               </div>
 
               <iframe
                 class="main-gym__video-video"
-                width="364"
-                height="228"
                 src="https://www.youtube.com/embed/9TZXsZItgdw"
                 title="YouTube video player"
                 frameborder="0"
@@ -75,6 +86,7 @@
           </div>
         </section>
         <section class="subscription">
+          <div class="subscription__image"><img src="img/pancakes.png" alt="Блины" srcset="img/pancakes@2x.png 2x" height="345" width="289" /></div>
           <h2 class="subscription__title">Абонементы</h2>
           <ul class="subscription__list">
             <li class="subscription__item">
@@ -130,7 +142,7 @@
             </li>
           </ul>
         </section>
-        <section class="competition container">
+        <!--  <section class="competition container">
           <div class="competition__wrap">
             <div class="competition__wrapper">
               <div class="competition__containter">
@@ -139,43 +151,57 @@
                   games
                 </h2>
                 <div>
-                  <p class="competition__subtitle">Дата</p>
                   <div>
-                    <p class="competition__time">7</p>
+                    <p class="competition__subtitle">Дата</p>
+                    <div class="competition__time-wrapper">
+                      <p class="competition__time">7</p>
+                      <div>
+                        <p class="competition__text">Марта</p>
+                        <p class="competition__text">2019</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="competition__subtitle">Время</p>
                     <div>
-                      <p class="competition__text">Марта</p>
-                      <p class="competition__text">2019</p>
+                      <p class="competition__time">12:00</p>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <p class="competition__subtitle">Время</p>
-                  <div>
-                    <p class="competition__time">12:00</p>
-                  </div>
-                </div>
               </div>
-              <p class="competition__subtitle">Ежегодные соревнования по CrossFit</p>
+              <p class="competition__subtitle competition__subtitle--text">Ежегодные соревнования по CrossFit</p>
               <a href="#" class="comtetition__link">Заполнить заявку</a>
             </div>
             <div class="competition__image">
               <img src="img/crossfit.png" alt="Кроссфит" srcset="img/crossfit@2x.png 2x" width="292" height="386" />
             </div>
           </div>
-        </section>
+        </section> -->
       </main>
       <footer class="footer">
         <div class="container footer__wrapper">
-          <a class="footer__logo" href="#">
-            <img src="img/header/logo.svg" alt="Логотип фитнес центра." width="88" height="32" />
-          </a>
-          <ul class="footer__list">
-            <li class="footer__item"><a href="#">Услуги</a></li>
-            <li class="footer__item"><a href="#">Абонименты</a></li>
-            <li class="footer__item"><a href="#">Акции</a></li>
-            <li class="footer__item"><a href="#">Тренеры</a></li>
-            <li class="footer__item"><a href="#">Расписание</a></li>
-          </ul>
+          <div class="footer__container">
+            <a class="footer__logo" href="#">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/header/logo.svg" />
+                <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" />
+                <img class="header-nav__logo-img" src="img/header/logo-phone.svg" alt="Логотип фитнес центра." width="69" height="24" />
+              </picture>
+            </a>
+            <div class="footer__nav">
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#">Услуги</a></li>
+                <li class="footer__item"><a href="#">Абонименты</a></li>
+              </ul>
+
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#">Акции</a></li>
+                <li class="footer__item"><a href="#">Тренеры</a></li>
+                <li class="footer__item"><a href="#">Расписание</a></li>
+              </ul>
+            </div>
+          </div>
+
           <ul class="footer__social">
             <li class="footer__social-item">
               <a href="#">
