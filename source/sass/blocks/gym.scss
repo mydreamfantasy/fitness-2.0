@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding-bottom: 70px;
 
   @media (min-width: $vp-768) {
     padding: 0 45px;
@@ -180,5 +181,5 @@
 }
 
 .main-gym__video-video {
-  visibility: hidden;
+  display: none;
 }
