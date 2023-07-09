@@ -2,9 +2,11 @@
   position: relative;
   background: $subscription-color;
   padding: 64px 15px;
+  padding-bottom: 97px;
 
   @media (min-width: $vp-768) {
     padding: 100px 45px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $vp-1366) {
@@ -20,7 +22,7 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: -77px;
+    bottom: -125px;
 
     img {
       width: 100%;
