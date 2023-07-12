@@ -1,0 +1,133 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: $subscription-color;
+}
+
+.faq__wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+.faq__title {
+  margin: 0;
+  padding: 0;
+  color: $price;
+  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0.96px;
+  padding-bottom: 42px;
+  padding-left: 15px;
+
+  @media (min-width: $vp-768) {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    padding-bottom: 26px;
+    padding-left: 45px;
+  }
+
+  @media (min-width: $vp-1200) {
+    text-align: start;
+    letter-spacing: 1.62px;
+    font-size: 54px;
+    padding-bottom: 38px;
+    padding-left: 103px;
+  }
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq__tab {
+  margin: 0;
+  padding: 18px;
+  background-color: inherit;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+  color: $gym-color;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+
+  &.is-active {
+    border: none;
+    padding: 19px;
+    color: $color-default-white;
+    background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));
+  }
+}
+
+.faq__acc-list {
+  position: relative;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.faq__acc-item {
+  border-top: 1px solid rgba(28, 51, 116, 0.2);
+  padding-bottom: 31px;
+
+  &:last-of-type {
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+
+  &.is-active {
+    padding-bottom: 24px;
+  }
+}
+
+.faq__acc-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.faq__acc-button {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: inherit;
+  color: $gym-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding-top: 32px;
+  letter-spacing: 0.1px;
+}
+
+.faq__acc-click {
+  height: 42px;
+  width: 42px;
+  margin-bottom: -6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='42' viewBox='0 0 42 42' fill='none'%3E%3Ccircle cx='21' cy='21' r='20.5' stroke='%231C3374'/%3E%3Cpath d='M21 12V21M21 30V21M21 21H30M21 21H12' stroke='%231C3374'/%3E%3C/svg%3E");
+
+  &--open {
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='21' cy='21' r='20.5' fill='%231C3374' stroke='%231C3374'/%3E%3Cpath d='M30 21H21H12' stroke='white'/%3E%3C/svg%3E%0A");
+  }
+}
+
+.faq__acc-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 203px;
+  color: $gym-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}

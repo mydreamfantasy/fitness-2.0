@@ -22,4 +22,14 @@
       <symbol viewBox="0 0 18 34" id="arrow-next">
         <path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
       </symbol>
+
+      <symbol viewBox="0 0 42 42" id="plus">
+        <circle cx="21" cy="21" r="20.5" stroke="#1C3374"/>
+        <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#1C3374"/>
+      </symbol>
+
+      <symbol viewBox="0 0 42 42" id="minus">
+        <circle cx="21" cy="21" r="20.5" fill="#1C3374" stroke="#1C3374"/>
+        <path d="M30 21H21H12" stroke="white"/>
+      </symbol>
 </symbol></svg>

@@ -3,8 +3,8 @@ const getSwiper = () => {
     allowTouchMove: true,
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.trainer__button-next',
+      prevEl: '.trainer__button-prev',
     },
 
     breakpoints: {
@@ -21,7 +21,7 @@ const getSwiper = () => {
 
       1200: {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 35,
       },
     },
   })

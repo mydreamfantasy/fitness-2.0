@@ -1,0 +1,20 @@
+.tabs__control {
+  cursor: pointer;
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: none;
+  }
+}
+
+.tabs__content {
+  transition: height 0.3s;
+}
+
+.tabs__element {
+  display: none;
+
+  &.is-active {
+    display: flex;
+  }
+}

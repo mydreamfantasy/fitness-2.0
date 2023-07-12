@@ -1,12 +1,13 @@
 .trainers {
+  position: relative;
   padding: 0 47px 70px;
 
   @media (min-width: $vp-768) {
     padding: 24px 103px 105px;
   }
 
-  @media (min-width: $vp-1366) {
-    padding-top: 37px;
+  @media (min-width: $vp-1200) {
+    padding-top: 41px;
   }
 }
 
@@ -28,7 +29,7 @@
     padding-bottom: 26px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     text-align: start;
     letter-spacing: 1.62px;
     font-size: 54px;
@@ -113,5 +114,30 @@
 
   &:not(:last-of-type) {
     padding-bottom: 13px;
+  }
+}
+
+.trainers__button {
+  position: absolute;
+  top: 51.5%;
+  width: 18px;
+  height: 32px;
+
+  & svg {
+    fill: none;
+  }
+}
+
+.trainer__button-prev {
+  left: 15px;
+  @media (min-width: $vp-768) {
+    left: 46px;
+  }
+}
+
+.trainer__button-next {
+  right: 15px;
+  @media (min-width: $vp-768) {
+    right: 46px;
   }
 }

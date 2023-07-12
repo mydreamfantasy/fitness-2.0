@@ -6,7 +6,7 @@
   @media (min-width: $vp-768) {
     padding-top: 100px;
   }
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding-top: 120px;
   }
 }
@@ -18,7 +18,7 @@
   @media (min-width: $vp-768) {
     padding: 12px 44px;
   }
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding: 41px 78px;
   }
 }
@@ -30,7 +30,7 @@
   @media (min-width: $vp-768) {
     flex-direction: row;
   }
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     flex-direction: row;
   }
 }
@@ -46,7 +46,7 @@
     justify-content: start;
     margin-top: 35px;
   }
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     gap: 60px;
     padding-bottom: 12px;
   }
@@ -69,7 +69,7 @@
     margin-left: 9px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     margin-left: 12px;
     margin-top: -11px;
     font-size: 82px;
@@ -98,7 +98,7 @@
     }
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     font-size: 18px;
 
     &--text {
@@ -130,7 +130,7 @@
     font-size: 24px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     font-size: 39px;
 
     &::after {
@@ -159,7 +159,7 @@
     gap: 3px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     gap: 7px;
     margin-bottom: 12px;
 
@@ -180,7 +180,7 @@
   @media (min-width: $vp-768) {
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     font-size: 14px;
   }
 }
@@ -198,6 +198,15 @@
   border: 2px solid $color-default-white;
   text-transform: uppercase;
 
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: $gym-color;
+  }
+
   @media (min-width: $vp-768) {
     margin: 0;
     padding: 13px 48px;
@@ -205,7 +214,7 @@
     letter-spacing: 0.5px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding: 25px 53px;
     font-size: 12px;
   }

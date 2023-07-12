@@ -10,7 +10,7 @@
     padding-bottom: 183px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     display: flex;
     justify-content: space-between;
     gap: 80px;
@@ -24,7 +24,7 @@
   @media (min-width: $vp-768) {
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding-top: 38px;
     padding-left: 60px;
     max-width: 410px;
@@ -53,7 +53,7 @@
     letter-spacing: 1.2px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     font-size: 48px;
     letter-spacing: 1.44px;
     padding-bottom: 6px;
@@ -78,7 +78,7 @@
     padding-bottom: 34px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding-bottom: 39px;
     padding-left: 0;
     text-align: start;
@@ -107,7 +107,7 @@
     padding-bottom: 44px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     padding: 0;
     text-align: start;
 
@@ -133,7 +133,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     width: 660px;
     height: 401px;
   }
@@ -148,11 +148,34 @@
     height: 167px;
   }
 
-  @media (min-width: $vp-1366) {
+  @media (min-width: $vp-1200) {
     bottom: -114px;
     left: 540px;
     width: 364px;
     height: 228px;
+  }
+}
+
+.main-gym__video iframe {
+  max-height: 100%;
+  height: 53vw;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: -0.8vw;
+
+  @media (min-width: $vp-768) {
+    max-width: 100%;
+    max-height: 100%;
+    width: 266px;
+    height: 167px;
+    margin-bottom: 0.3vw;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 364px;
+    width: 354px;
+    height: 228px;
+    max-height: 228px;
   }
 }
 
@@ -175,11 +198,50 @@
 
   @media (min-width: $vp-768) {
     img {
+      width: 100%;
       height: auto;
     }
   }
 }
 
-.main-gym__video-video {
+.main-gym__video-player {
   display: none;
+}
+
+.main-gym__video-btn {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+
+  border: none;
+  background-color: inherit;
+  background-image: url('../img/svg/video-btn.svg');
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-size: contain;
+
+  @media (min-width: $vp-768) {
+    width: 73px;
+    height: 73px;
+  }
+}
+
+.main-gym__video--active .main-gym__video-player {
+  display: block;
+}
+
+.main-gym__video--active .main-gym__video-btn {
+  display: none;
+}
+
+.main-gym__video--active .main-gym__video-img {
+  display: none;
+
+  img {
+    display: none;
+  }
 }
