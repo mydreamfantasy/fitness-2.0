@@ -37,6 +37,37 @@
   }
 }
 
+.trainers__slide {
+  width: 290px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &:hover .trainers__wrapper-info {
+    opacity: 1;
+  }
+
+  &:hover .trainers__name--img {
+    opacity: 0;
+  }
+}
+
+.trainers__slide img {
+  display: block;
+  width: 226px;
+  height: 274px;
+  object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    width: 260px;
+    height: 294px;
+  }
+}
+
 .trainers__image {
   display: block;
   width: 226px;

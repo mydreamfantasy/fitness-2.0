@@ -1,6 +1,7 @@
 .competition {
   position: relative;
-
+  display: flex;
+  justify-content: center;
   padding-bottom: 66px;
 
   @media (min-width: $vp-768) {

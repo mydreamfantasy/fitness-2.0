@@ -27,4 +27,18 @@ const getSwiper = () => {
   })
 }
 
-export { getSwiper }
+const getSwiperSecond = () => {
+  const swiperSecond = new Swiper('.review-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    loopedSlides: 2,
+    // effect: 'fade',
+    loop: true,
+
+    navigation: {
+      nextEl: '.review__button-next',
+      prevEl: '.review__button-prev',
+    },
+  })
+}
+export { getSwiper, getSwiperSecond }
