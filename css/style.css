@@ -2287,9 +2287,6 @@ button,
   padding: 0;
   line-height: 90%;
   font-weight: 700;
-  background: #ffffff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-size: 74px;
   font-weight: 700;
   text-align: center;
@@ -2329,7 +2326,6 @@ button,
 
 .features__text-center {
   margin: 0;
-  padding: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 140%;
@@ -3531,6 +3527,7 @@ button,
 
   .features__text-center {
     text-align: center;
+    padding: 0 2px;
   }
 
   .features__subtitle-center {
