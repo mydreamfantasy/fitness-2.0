@@ -45,7 +45,10 @@
             <a href="#subscription" class="main-banner__button">Купить абонимент</a>
           </div>
           <div class="main-banner__img-wrapper">
-            <img class="main-banner__img" src="img/header/main-banner.png" alt="Спортсмен" srcset="img/header/main-banner@2x.png 2x" height="556" width="500" />
+            <picture>
+              <source type="image/webp" srcset="img/header/main-banner.webp 1x, img/header/main-banner@2x.webp 2x" />
+              <img class="main-banner__img" src="img/header/main-banner.png" alt="Спортсмен" srcset="img/header/main-banner@2x.png 2x" height="556" width="500" />
+            </picture>
           </div>
         </section>
         <section class="main-gym">
@@ -61,8 +64,11 @@
           </div>
           <div class="main-gym__block">
             <picture>
-              <source media=" (min-width: 1366px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x" />
+              <source media=" (min-width: 1200px)" type="image/webp" srcset="img/gym-photo.webp 1x, img/gym-photo.@2x.webp 2x" />
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-photo-tablet.webp 1x, img/gym-photo-tablet.@2x.webp 2x" />
+              <source media=" (min-width: 1200px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x" />
               <source media="(min-width: 768px)" srcset="img/gym-photo-tablet.png 1x, img/gym-photo-tablet@2x.png 2x" />
+              <source type="image/webp" srcset="img/gym-photo-phone.webp 1x, img/gym-photo-phone.@2x.webp 2x" />
               <img class="main-gym__photo" src="img/gym-photo-phone.png" alt="Спортзал" srcset="img/gym-photo-phone@2x.png 2x" height="320" width="313" />
             </picture>
 
@@ -70,6 +76,7 @@
               <div class="main-gym__video-img">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/img/video-preview.png 1x, img/video-preview@2x.png 2x" />
+                  <source type="image/webp" srcset="img/video-preview-phone.webp 1x, img/video-preview-phone.@2x.webp 2x" />
                   <img src="img/video-preview-phone.png" alt="Спортзал" srcset="img/video-preview-phone@2x.png 2x" height="127" width="320" />
                 </picture>
                 <a class="main-gym__video-btn" href="https://www.youtube.com/watch?v=9TZXsZItgdw" data-video-btn>
