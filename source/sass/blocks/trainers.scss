@@ -103,8 +103,8 @@
 .trainers__wrapper-info {
   display: block;
   position: absolute;
-  padding: 57px;
-  padding-top: 51px;
+  padding: 13px;
+  padding-top: 20px;
   padding-right: 40px;
   padding-left: 46px;
   top: 0;
@@ -116,6 +116,7 @@
   opacity: 0;
 
   @media (min-width: $vp-768) {
+    padding-top: 51px;
     width: 260px;
     height: 294px;
   }
@@ -134,8 +135,12 @@
   padding: 0;
   margin: 0;
   text-align: start;
-  padding-top: 30px;
+  padding-top: 10px;
   padding-left: 25px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 30px;
+  }
 }
 
 .trainers__item {
