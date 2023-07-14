@@ -99,7 +99,7 @@
   font-weight: 700;
   line-height: 90%;
   background: $red-blue-right;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $vp-768) {
@@ -120,7 +120,7 @@
   line-height: 90%;
   font-weight: 700;
   background: $color-default-white;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 74px;
   font-weight: 700;
