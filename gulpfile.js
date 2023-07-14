@@ -8,14 +8,6 @@ import { optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg } from './gul
 
 const server = browserSync.create()
 const streamStyles = () => compileStyles().pipe(server.stream())
-
-const gulp = require('gulp')
-const ghPages = require('gulp-gh-pages')
-
-gulp.task('deploy', function () {
-  return gulp.src('./dist/**/*').pipe(ghPages())
-})
-
 const clean = () => del('build')
 
 const syncServer = () => {
