@@ -4225,6 +4225,10 @@ button,
     padding-right: 27px;
   }
 
+  .promo__block-text {
+    padding-bottom: 68px;
+  }
+
   .faq {
     padding-top: 120px;
     padding-bottom: 120px;
