@@ -180,6 +180,7 @@
   padding-top: 40px;
 
   @media (min-width: $vp-768) {
+    flex-direction: column;
     grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -190,6 +191,7 @@
   }
 
   @media (min-width: $vp-1200) {
+    flex-direction: column;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
