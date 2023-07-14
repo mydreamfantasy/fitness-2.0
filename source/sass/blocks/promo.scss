@@ -4,7 +4,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 92px;
-    padding-bottom: 70px;
+    padding-bottom: 99px;
   }
 
   @media (min-width: $vp-1200) {
@@ -151,6 +151,15 @@
     left: 0;
     transform: translate(0, 0);
   }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    outline-offset: 10px;
+  }
 }
 
 .promo__photo {
@@ -265,5 +274,14 @@
   @media (min-width: $vp-768) {
     left: 0;
     transform: translate(0, 0);
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $resolution-blue;
+    outline-offset: 10px;
   }
 }

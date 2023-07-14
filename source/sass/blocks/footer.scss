@@ -13,7 +13,6 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 44px 0 32px;
   }
 }
@@ -22,7 +21,6 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 62px;
   }
 
@@ -33,9 +31,23 @@
 
 .footer__logo {
   display: inline-block;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
+
   @media (min-width: $vp-768) {
     padding: 0;
+  }
+}
+
+.footer__logo-img {
+  @media (min-width: $vp-768) {
+    min-width: 82px;
+    height: 17px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-top: -8px;
+    min-width: 88px;
+    height: 44px;
   }
 }
 
@@ -57,11 +69,11 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 14px;
   list-style-type: none;
 
   &:last-of-type {
-    margin-top: -54px;
+    margin-top: -38px;
   }
 
   @media (min-width: $vp-768) {
@@ -82,13 +94,29 @@
 
 .footer__item {
   & a {
+    display: inline-block;
     color: $color-default-white;
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
+    position: relative;
 
     @media (min-width: $vp-768) {
       font-size: 14px;
+    }
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:focus-visible {
+      outline-offset: 10px;
+      outline: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.4;
     }
   }
 }
@@ -109,4 +137,11 @@
 }
 
 .footer__social-item {
+  a:hover {
+    svg {
+      use {
+        fill: $price;
+      }
+    }
+  }
 }

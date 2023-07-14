@@ -225,8 +225,17 @@
   background-size: contain;
 
   @media (min-width: $vp-768) {
-    width: 73px;
-    height: 73px;
+    width: 100px;
+    height: 100px;
+  }
+
+  &:hover,
+  &:focus {
+    background-image: url('../img/svg/video-btn-hover.svg');
+  }
+
+  &:disabled {
+    background-image: url(('../img/svg/video-btn-disabled.svg'));
   }
 }
 

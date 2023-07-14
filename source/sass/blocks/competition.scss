@@ -5,7 +5,7 @@
   padding-bottom: 66px;
 
   @media (min-width: $vp-768) {
-    padding-top: 100px;
+    padding-top: 107px;
   }
   @media (min-width: $vp-1200) {
     padding-top: 120px;
@@ -200,7 +200,8 @@
   text-transform: uppercase;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
+    outline: none;
     opacity: 0.3;
   }
 

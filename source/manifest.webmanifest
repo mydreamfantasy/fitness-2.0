@@ -1,6 +1,4 @@
 {
-  "name": "fitness-v.2.0",
-  "short_name": "fitness",
   "icons": [
     { "src": "img/favicon/16.png", "type": "image/png", "sizes": "16x16" },
     { "src": "img/favicon/32.png", "type": "image/png", "sizes": "32x32" },

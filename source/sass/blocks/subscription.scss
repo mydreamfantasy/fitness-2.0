@@ -11,7 +11,7 @@
 
   @media (min-width: $vp-1200) {
     padding: 123px 103px;
-    padding-bottom: 72px;
+    padding-bottom: 80px;
   }
 }
 
@@ -22,7 +22,7 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: -125px;
+    bottom: -131px;
 
     img {
       width: 100%;
@@ -97,7 +97,7 @@
     }
   }
 
-  @media (min-width: $vp-1200) {
+  @media (min-width: $vp-1440) {
     &::after {
       left: 37.5%;
     }
@@ -145,13 +145,14 @@
   list-style-type: none;
   align-items: center;
   gap: 33px;
+  height: auto;
 
   &.is-active {
     display: flex;
   }
 
   @media (min-width: $vp-768) {
-    padding: 49px 0;
+    padding: 42px 0;
     gap: 40px;
   }
 
@@ -185,8 +186,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 49px 68px;
-    padding-bottom: 58px;
+    padding: 46px 68px 58px;
     width: 442px;
   }
 
@@ -295,8 +295,9 @@
   border: 2px solid $gym-color;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     border: none;
+    outline: none;
     padding: 26px 45px;
     color: $color-default-white;
     background: var(--1, linear-gradient(151deg, #ed0233 0%, #003eb7 100%));

@@ -160,7 +160,8 @@
   white-space: nowrap;
   transition: $trans-default;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: $price;
     background-color: $color-default-white;
   }

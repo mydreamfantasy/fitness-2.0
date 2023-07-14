@@ -4,6 +4,7 @@ import { Form } from './modules/form-validate/form'
 import { getSwiper, getSwiperSecond } from './modules/swiper'
 import { initTabs } from './modules/tabs/init-tabs'
 import { initVideo } from './modules/video'
+import { initAccordions } from './modules/accordion/init-accordion'
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   getSwiper()
   getSwiperSecond()
   initTabs()
+  initAccordions()
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

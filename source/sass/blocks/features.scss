@@ -3,7 +3,7 @@
   padding: 62px 0;
 
   @media (min-width: $vp-768) {
-    padding: 100px 45px 93px;
+    padding: 86px 45px 93px;
   }
 
   @media (min-width: $vp-1200) {
@@ -36,6 +36,7 @@
     letter-spacing: 1.62px;
     font-size: 54px;
     padding-bottom: 48px;
+    padding-left: 21px;
   }
 }
 

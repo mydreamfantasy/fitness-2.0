@@ -1,5 +1,5 @@
 const getSwiper = () => {
-  const swiperFirst = new Swiper('.swiper', {
+  const swiperFirst = new Swiper('.trainers__swiper', {
     allowTouchMove: true,
     loop: true,
     navigation: {
@@ -30,10 +30,8 @@ const getSwiper = () => {
 const getSwiperSecond = () => {
   const swiperSecond = new Swiper('.review-swiper', {
     slidesPerView: 1,
-    spaceBetween: 40,
-    loopedSlides: 2,
-    // effect: 'fade',
-    loop: true,
+    // centeredSlides: true,
+    spaceBetween: 30,
 
     navigation: {
       nextEl: '.review__button-next',
@@ -41,4 +39,5 @@ const getSwiperSecond = () => {
     },
   })
 }
+
 export { getSwiper, getSwiperSecond }
