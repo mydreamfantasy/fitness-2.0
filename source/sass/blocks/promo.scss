@@ -245,6 +245,10 @@
       padding-bottom: 67px;
     }
   }
+
+  @media (min-width: $vp-1200) {
+    padding-bottom: 68px;
+  }
 }
 
 .promo__block-link {
