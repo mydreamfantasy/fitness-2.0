@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   color: $price;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   line-height: normal;
   text-align: center;
@@ -41,7 +41,7 @@
   width: 290px;
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +120,10 @@
     width: 260px;
     height: 294px;
   }
+
+  @media (min-width: $vp-1440) {
+    left: 4%;
+  }
 }
 
 .trainers__text {
@@ -137,6 +141,7 @@
   text-align: start;
   padding-top: 10px;
   padding-left: 25px;
+  overflow: scroll;
 
   @media (min-width: $vp-768) {
     padding-top: 30px;
@@ -172,7 +177,7 @@
   }
 }
 
-.trainer__button-prev {
+.trainers__button--prev {
   left: 15px;
 
   @media (min-width: $vp-768) {
@@ -180,7 +185,7 @@
   }
 }
 
-.trainer__button-next {
+.trainers__button--next {
   right: 15px;
 
   @media (min-width: $vp-768) {

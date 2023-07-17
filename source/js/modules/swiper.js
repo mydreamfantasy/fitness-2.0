@@ -3,8 +3,8 @@ const getSwiper = () => {
     allowTouchMove: true,
     loop: true,
     navigation: {
-      nextEl: '.trainer__button-next',
-      prevEl: '.trainer__button-prev',
+      nextEl: '.trainers__button--next',
+      prevEl: '.trainers__button--prev',
     },
 
     breakpoints: {

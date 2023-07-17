@@ -135,13 +135,3 @@
     justify-content: space-between;
   }
 }
-
-.footer__social-item {
-  a:hover {
-    svg {
-      use {
-        fill: $price;
-      }
-    }
-  }
-}

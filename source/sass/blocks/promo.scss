@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   color: $gym-color;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 32px;
   letter-spacing: 0.96px;
   font-weight: 600;
@@ -86,9 +86,6 @@
   @media (min-width: $vp-768) {
     text-align: start;
   }
-
-  @media (min-width: $vp-1200) {
-  }
 }
 
 .promo__red-price {
@@ -126,7 +123,6 @@
 .promo__red-link {
   padding: 0;
   display: inline-block;
-  position: relative;
   color: $color-default-white;
   font-size: 14px;
   font-weight: 700;
@@ -138,7 +134,7 @@
   transform: translate(-50%, 0);
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -165,13 +161,14 @@
 .promo__photo {
   display: block;
 
-  @media (min-width: $vp-768) {
-    & img {
-      width: 100%;
-    }
+  & img {
+    width: 100%;
   }
 
-  @media (min-width: $vp-1200) {
+  @media (min-width: $vp-768) {
+    & img {
+      height: 100%;
+    }
   }
 }
 
@@ -266,7 +263,7 @@
   transform: translate(-50%, 0);
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -2px;
     left: 0;

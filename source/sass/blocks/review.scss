@@ -1,8 +1,5 @@
 .review {
-  padding-top: 62px;
-  padding-bottom: 70px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 62px 15px 70px;
   position: relative;
 
   @media (min-width: $vp-768) {
@@ -20,7 +17,7 @@
   margin: 0;
   padding: 0;
   color: $gym-color;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 32px;
   letter-spacing: 0.96px;
   font-weight: 600;
@@ -64,7 +61,7 @@
     padding: 62px;
     flex-direction: row;
     gap: 28px;
-    filter: drop-shadow(0px 0px 40px rgba(28, 51, 116, 0.2));
+    filter: drop-shadow(0 0 40px rgba(28, 51, 116, 0.2));
   }
 }
 
@@ -93,7 +90,6 @@
   color: $color-default-white;
   font-size: 20px;
   font-weight: 700;
-  line-height: 125%;
   line-height: 87%;
   display: none;
 
@@ -103,7 +99,6 @@
     color: $color-default-white;
     font-size: 20px;
     font-weight: 700;
-    line-height: 125%;
     line-height: 87%;
     display: block;
   }

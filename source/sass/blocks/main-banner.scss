@@ -1,16 +1,19 @@
 .main-banner {
   padding-top: 70px;
   background: conic-gradient(from 167deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background-color: $percian-blue;
 
   @media (min-width: $vp-768) {
     display: flex;
     gap: 30px;
     background: conic-gradient(from 155deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    background-color: $percian-blue;
   }
 
   @media (min-width: $vp-1200) {
     gap: 59px;
     background-image: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    background-color: $percian-blue;
   }
 }
 
@@ -38,7 +41,7 @@
   text-transform: uppercase;
   text-align: end;
   color: $color-default-white;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -77,6 +80,7 @@
   @media (min-width: $vp-768) {
     margin-top: 99px;
   }
+
   @media (min-width: $vp-1200) {
     margin-top: 136px;
   }
@@ -100,7 +104,7 @@
   color: $color-default-white;
   text-align: right;
   font-size: 72px;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -122,6 +126,7 @@
 
 .main-banner__img-wrapper {
   display: none;
+
   @media (min-width: $vp-768) {
     display: block;
     margin: 0;

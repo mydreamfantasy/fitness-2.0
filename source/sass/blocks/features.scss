@@ -15,8 +15,7 @@
   margin: 0;
   padding: 0;
   color: $price;
-  font-family: 'Alumni Sans', 'Arial', sans-serif;
-  font-weight: 600;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   line-height: normal;
   text-align: center;
   font-size: 32px;
@@ -76,7 +75,7 @@
   @media (min-width: $vp-1200) {
     &:nth-of-type(1)::after,
     &:nth-of-type(4)::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -75px;
       left: -19px;
@@ -94,12 +93,11 @@
 .features__number {
   margin: 0;
   padding: 0;
-  line-height: 90%;
   font-size: 58px;
   font-weight: 700;
   line-height: 90%;
   background: $red-blue-right;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (min-width: $vp-768) {
@@ -118,7 +116,6 @@
   margin: 0;
   padding: 0;
   line-height: 90%;
-  font-weight: 700;
   font-size: 74px;
   font-weight: 700;
   text-align: center;
@@ -149,9 +146,6 @@
   @media (min-width: $vp-768) {
     text-align: start;
   }
-
-  @media (min-width: $vp-1200) {
-  }
 }
 
 .features__subtitle {
@@ -175,7 +169,6 @@
 
 .features__text {
   margin: 0;
-  padding: 0;
   font-size: 16px;
   color: $gym-color;
   font-weight: 300;
@@ -213,7 +206,6 @@
   color: $color-default-white;
   text-align: center;
   letter-spacing: 1px;
-  padding-bottom: 11px;
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -277,6 +269,17 @@
 
   @media (min-width: $vp-1200) {
     grid-row-start: 2;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -75px;
+      left: -19px;
+      width: 106%;
+      height: 2px;
+      background: rgba(209, 10, 66, 0.2);
+    }
   }
 }
 
@@ -304,6 +307,17 @@
   @media (min-width: $vp-1200) {
     grid-column-start: 3;
     grid-row-start: 2;
+    position: relative;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    width: 106%;
+    height: 2px;
+    background: rgba(209, 10, 66, 0.2);
   }
 }
 
