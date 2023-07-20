@@ -24,6 +24,28 @@
   @media (min-width: $vp-1200) {
     padding: 41px 78px;
   }
+
+  h4 {
+    padding: 0;
+    margin: 0;
+    color: $color-default-white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 340px;
+    padding-bottom: 36px;
+    text-align: center;
+
+    @media (min-width: $vp-768) {
+      font-size: 12px;
+      text-align: start;
+    }
+
+    @media (min-width: $vp-1200) {
+      font-size: 18px;
+      padding-bottom: 50px;
+    }
+  }
 }
 
 .competition__wrap {
@@ -55,59 +77,46 @@
     gap: 60px;
     padding-bottom: 12px;
   }
-}
 
-.competition__title {
-  padding: 0;
-  margin: 0;
-  margin-left: 4px;
-  margin-top: -11px;
-  line-height: 96%;
-  font-size: 48px;
-  letter-spacing: 1.44px;
-  text-transform: uppercase;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  color: $color-default-white;
-
-  @media (min-width: $vp-768) {
-    margin-top: -6px;
-    margin-left: 9px;
-  }
-
-  @media (min-width: $vp-1200) {
-    margin-left: 12px;
+  h2 {
+    padding: 0;
+    margin: 0;
+    margin-left: 4px;
     margin-top: -11px;
-    font-size: 82px;
-    letter-spacing: 2.46px;
-  }
-}
+    line-height: 96%;
+    font-size: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    color: $color-default-white;
 
-.competition__subtitle {
-  padding: 0;
-  margin: 0;
-  color: $color-default-white;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
+    @media (min-width: $vp-768) {
+      margin-top: -6px;
+      margin-left: 9px;
+    }
 
-  &--text {
-    margin-bottom: 28px;
-    margin-left: 43px;
-  }
-
-  @media (min-width: $vp-768) {
-    font-size: 12px;
-
-    &--text {
-      margin-left: 0;
+    @media (min-width: $vp-1200) {
+      margin-left: 12px;
+      margin-top: -11px;
+      font-size: 82px;
+      letter-spacing: 2.46px;
     }
   }
 
-  @media (min-width: $vp-1200) {
-    font-size: 18px;
+  h3 {
+    padding: 0;
+    margin: 0;
+    color: $color-default-white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
 
-    &--text {
-      margin-bottom: 46px;
+    @media (min-width: $vp-768) {
+      font-size: 12px;
+    }
+
+    @media (min-width: $vp-1200) {
+      font-size: 18px;
     }
   }
 }

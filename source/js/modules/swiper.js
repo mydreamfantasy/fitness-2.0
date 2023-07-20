@@ -1,43 +1,81 @@
+import Swiper from '../vendor/swiper';
+const swiperContainer = document.querySelectorAll('[data-swiper]');
+const swiperButtons = document.querySelectorAll('[data-swiper-button]');
+
 const getSwiper = () => {
-  const swiperFirst = new Swiper('.trainers__swiper', {
-    allowTouchMove: true,
-    loop: true,
-    navigation: {
-      nextEl: '.trainers__button--next',
-      prevEl: '.trainers__button--prev',
-    },
+  if (!swiperContainer) {
+    return;
+  } else {
+    const swiper = new Swiper('[data-swiper="trainers"]', {
+      direction: 'horizontal',
 
-    breakpoints: {
-      // when window width is <= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      // when window width is <= 480px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+      watchOverflow: true,
+
+      loop: true,
+
+      keyboard: {
+        enabled: true,
       },
 
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 35,
+      observer: true,
+
+      grabCursor: true,
+
+      navigation: {
+        prevEl: '[data-swiper-button="trainers-prev"]',
+        nextEl: '[data-swiper-button="trainers-next"]',
       },
-    },
-  })
-}
 
-const getSwiperSecond = () => {
-  const swiperSecond = new Swiper('.review-swiper', {
-    slidesPerView: 1,
-    // centeredSlides: true,
-    spaceBetween: 30,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          initialSlide: 2,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+          initialSlide: 2,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+          initialSlide: 0,
+        },
+      },
+    });
+    swiper.init();
+    const duplicates = document.querySelectorAll('.swiper-slide-duplicate');
+    duplicates.forEach((el) => el.removeAttribute('tabindex'));
+  }
+};
 
-    navigation: {
-      nextEl: '.review__button-next',
-      prevEl: '.review__button-prev',
-    },
-  })
-}
+const getSwiperReview = () => {
+  if (!swiperContainer) {
+    return;
+  } else {
+    const swiper = new Swiper('[data-swiper="reviews"]', {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      watchOverflow: true,
+      loop: false,
+      autoHeight: true,
 
-export { getSwiper, getSwiperSecond }
+      navigation: {
+        prevEl: '[data-swiper-button="reviews-prev"]',
+        nextEl: '[data-swiper-button="reviews-next"]',
+      },
+    });
+    swiper.init();
+  }
+};
+
+const removeNotJs = () => {
+  if (!swiperButtons || !swiperContainer) {
+    return;
+  }
+  swiperButtons.forEach((el) => el.classList.remove('is-not-js'));
+  swiperContainer.forEach((el) => el.classList.remove('is-not-js'));
+};
+
+export {getSwiper, getSwiperReview, removeNotJs};

@@ -13,7 +13,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
-    margin: 44px 0 32px;
+    margin: 44px auto 32px;
   }
 }
 
@@ -21,10 +21,12 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     gap: 62px;
   }
 
   @media (min-width: $vp-1200) {
+    align-items: start;
     gap: 277px;
   }
 }
@@ -133,5 +135,30 @@
     padding-top: 0;
     align-self: center;
     justify-content: space-between;
+  }
+}
+
+.footer__social-item {
+  a {
+    display: block;
+    height: 25px;
+  }
+
+  svg {
+    fill: inherit;
+    border-radius: 50%;
+    background-color: $color-default-white;
+    transition: $trans-default;
+  }
+
+  &:hover svg,
+  &:focus-visible svg {
+    fill: $color-default-white;
+    background-color: $price;
+  }
+
+  &:active svg {
+    fill: $color-default-white;
+    background-color: $gym-color;
   }
 }

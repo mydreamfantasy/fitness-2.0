@@ -154,6 +154,11 @@ export class Tabs {
     const tabControlElements = this._returnScopeList(tab.querySelectorAll('[data-tabs="control"]'), tab);
     const tabElements = this._returnScopeList(tab.querySelectorAll('[data-tabs="element"]'), tab);
     this._setTabStartState(tab, dataHeight, tabElements, tabContentElement, tabControlElements, dataDelay);
+    if (dataHeight !== 'unset') {
+      tabElements.forEach((element) => {
+        this._resizeObserver().observe(element);
+      });
+    }
     setTimeout(() => {
       tab.classList.remove('no-transition-global');
     });
@@ -175,10 +180,11 @@ export class Tabs {
     const dataHeight = parentElement.dataset.height;
     const contentElement = parentElement.querySelector('[data-tabs="content"]');
     const tabElements = this._returnScopeList(parentElement.querySelectorAll('[data-tabs="element"]'), parentElement);
+
     const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
     const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
     const currentHeight = contentElement.offsetHeight;
-    const newHeight = tabElements[currentIndex] ? tabElements[currentIndex].offsetHeight : 0;
+    const newHeight = tabElements[currentIndex].offsetHeight;
 
     parentElement.classList.add('no-action');
     document.activeElement.blur();
@@ -191,26 +197,24 @@ export class Tabs {
       activeElement.classList.remove('is-active');
     }
 
-    if (tabElements[currentIndex]) {
-      if (currentHeight > newHeight) {
-        setTimeout(() => {
-          if (dataHeight !== 'max' && dataHeight !== 'unset') {
-            contentElement.style.height = newHeight + 'px';
-          }
-          control.classList.add('is-active');
-          tabElements[currentIndex].classList.add('is-active');
-          parentElement.classList.remove('no-action');
-        }, dataDelay);
-      } else {
+    if (currentHeight > newHeight) {
+      setTimeout(() => {
         if (dataHeight !== 'max' && dataHeight !== 'unset') {
           contentElement.style.height = newHeight + 'px';
         }
-        setTimeout(() => {
-          control.classList.add('is-active');
-          tabElements[currentIndex].classList.add('is-active');
-          parentElement.classList.remove('no-action');
-        }, dataDelay);
+        control.classList.add('is-active');
+        tabElements[currentIndex].classList.add('is-active');
+        parentElement.classList.remove('no-action');
+      }, dataDelay);
+    } else {
+      if (dataHeight !== 'max' && dataHeight !== 'unset') {
+        contentElement.style.height = newHeight + 'px';
       }
+      setTimeout(() => {
+        control.classList.add('is-active');
+        tabElements[currentIndex].classList.add('is-active');
+        parentElement.classList.remove('no-action');
+      }, dataDelay);
     }
   }
 }

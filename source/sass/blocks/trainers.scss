@@ -9,186 +9,204 @@
   @media (min-width: $vp-1200) {
     padding-top: 41px;
   }
-}
 
-.trainers__title {
-  margin: 0;
-  padding: 0;
-  color: $price;
-  font-family: "Alumni Sans", "Arial", sans-serif;
-  font-weight: 600;
-  line-height: normal;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0.96px;
-  padding-bottom: 42px;
+  h2 {
+    color: $price;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 0.96px;
+    padding-bottom: 42px;
 
-  @media (min-width: $vp-768) {
-    font-size: 42px;
-    letter-spacing: 1.26px;
-    padding-bottom: 31px;
-  }
+    @media (min-width: $vp-768) {
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      padding-bottom: 31px;
+    }
 
-  @media (min-width: $vp-1200) {
-    text-align: start;
-    letter-spacing: 1.62px;
-    font-size: 54px;
-    padding-bottom: 48px;
-  }
-}
-
-.trainers__slide {
-  width: 290px;
-  text-align: center;
-  font-size: 18px;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  &:hover .trainers__wrapper-info {
-    opacity: 1;
-  }
-
-  &:hover .trainers__name--img {
-    opacity: 0;
-  }
-}
-
-.trainers__slide img {
-  display: block;
-  width: 226px;
-  height: 274px;
-  object-fit: cover;
-
-  @media (min-width: $vp-768) {
-    width: 260px;
-    height: 294px;
-  }
-}
-
-.trainers__image {
-  display: block;
-  width: 226px;
-  height: 274px;
-
-  @media (min-width: $vp-768) {
-    width: 260px;
-    height: 294px;
-  }
-}
-
-.trainers__name {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 150%;
-  color: $color-default-white;
-  margin: 0;
-  padding: 0;
-
-  &--img {
-    position: absolute;
-    bottom: 22px;
-    left: 38px;
-  }
-
-  @media (min-width: $vp-768) {
-    &--img {
-      left: 64px;
+    @media (min-width: $vp-1200) {
+      text-align: start;
+      letter-spacing: 1.62px;
+      font-size: 54px;
+      padding-bottom: 48px;
     }
   }
 }
 
-.trainers__wrapper-info {
-  display: block;
-  position: absolute;
-  padding: 13px;
-  padding-top: 20px;
-  padding-right: 40px;
-  padding-left: 46px;
-  top: 0;
-  left: 0;
-  background-color: rgba(16, 38, 84, 0.89);
-  width: 226px;
-  height: 274px;
-  color: $color-default-white;
-  opacity: 0;
+.trainers__slider {
+  max-width: 1400px;
+  width: 100%;
+}
+
+.trainers__slider.is-not-js .trainers__list {
+  display: grid;
+  grid-template-columns: 1fr;
 
   @media (min-width: $vp-768) {
-    padding-top: 51px;
-    width: 260px;
-    height: 294px;
-  }
-
-  @media (min-width: $vp-1440) {
-    left: 4%;
-  }
-}
-
-.trainers__text {
-  margin: 0;
-  padding: 0;
-  color: $spindle;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
-
-.trainers__list {
-  padding: 0;
-  margin: 0;
-  text-align: start;
-  padding-top: 10px;
-  padding-left: 25px;
-  overflow: scroll;
-
-  @media (min-width: $vp-768) {
-    padding-top: 30px;
-  }
-}
-
-.trainers__item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 150%;
-
-  &:not(:last-of-type) {
-    padding-bottom: 13px;
-  }
-}
-
-.trainers__button {
-  position: absolute;
-  top: 51.5%;
-  width: 18px;
-  height: 32px;
-
-  & svg {
-    fill: none;
-  }
-
-  @media (min-width: $vp-768) {
-    top: 47.5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   @media (min-width: $vp-1200) {
-    top: 51.5%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
 }
 
-.trainers__button--prev {
-  left: 15px;
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
-  @media (min-width: $vp-768) {
-    left: 46px;
+.trainers__item {
+  position: relative;
+  max-height: none;
+}
+
+.trainers__item h3 {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 22px;
+  left: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+  text-align: center;
+
+  @media (min-width: $vp-1200) {
+    bottom: 20px;
+    left: 0;
   }
 }
 
-.trainers__button--next {
-  right: 15px;
+.trainers__item:hover h3,
+.trainers__item:active h3,
+.trainers__item:focus-within h3 {
+  display: none;
+}
+
+.trainers__item:hover .trainers__item-description,
+.trainers__item:active .trainers__item-description,
+.trainers__item:focus-within .trainers__item-description {
+  opacity: 1;
+  z-index: 1;
+}
+
+.trainers__item-description {
+  position: absolute;
+
+  padding: 41px 30px 41px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+
+  background-color: rgba(16, 38, 84, 0.89);
+
+  opacity: 0;
+  z-index: -1;
 
   @media (min-width: $vp-768) {
-    right: 46px;
+    padding: 52px 37px 53px;
+  }
+}
+
+.trainers__item:hover .trainers__item-description > h3,
+.trainers__item:active .trainers__item-description > h3,
+.trainers__item:focus-visible .trainers__item-description > h3 {
+  margin: 0 0 -4px 0;
+
+  display: block;
+  position: initial;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 -4px -4px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin: 0 0 -4px 0;
+  }
+}
+
+.trainers__item-description span {
+  margin: 0 0 33px -4px;
+
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $spindle;
+
+  @media (min-width: $vp-1200) {
+    margin: 0 0 33px;
+  }
+}
+
+.trainers__item-description ul {
+  margin: 0;
+  padding: 0 0 0 19px;
+
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 0 34px;
+    width: 100%;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0 0 0 33px;
+  }
+}
+
+.trainers__item-description li {
+  margin: 0 0 13px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-white;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 50%;
+  }
+}
+
+.trainers__image {
+  width: 100%;
+  height: auto;
+  object-position: center;
+  aspect-ratio: 226/274;
+
+  @media (min-width: $vp-768) {
+    max-width: 100%;
+    aspect-ratio: 268/294;
+  }
+
+  @media (min-width: $vp-1200) {
+    object-fit: cover;
+    aspect-ratio: 260/294;
   }
 }
