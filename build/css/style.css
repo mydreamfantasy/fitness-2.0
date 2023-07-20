@@ -3030,6 +3030,11 @@ button,
     padding-bottom: 48px;
   }
 }
+@media (min-width: 1920px) {
+  .trainers h2 {
+    padding-left: 20%;
+  }
+}
 
 .trainers__slider {
   max-width: 1400px;

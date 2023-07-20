@@ -34,6 +34,10 @@
       font-size: 54px;
       padding-bottom: 48px;
     }
+
+    @media (min-width: $vp-1920) {
+      padding-left: 20%;
+    }
   }
 }
 
