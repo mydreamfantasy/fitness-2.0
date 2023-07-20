@@ -74,6 +74,7 @@
 }
 
 .features__wrapper {
+  align-self: center;
   h4 {
     margin: 0;
     padding: 0;
@@ -159,6 +160,7 @@
   grid-row-start: 3;
   padding: 50px 30px;
   padding-top: 40px;
+  text-align: center;
 
   @media (min-width: $vp-768) {
     flex-direction: column;
@@ -188,19 +190,14 @@
     line-height: 90%;
     font-size: 74px;
     font-weight: 700;
-    text-align: center;
     color: $color-default-white;
 
     @media (min-width: $vp-768) {
-      text-align: center;
       line-height: 113%;
-      padding-left: 36px;
     }
 
     @media (min-width: $vp-1200) {
-      text-align: center;
       line-height: 124%;
-      padding-left: 27px;
     }
   }
 }

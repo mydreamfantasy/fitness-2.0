@@ -3319,6 +3319,11 @@ button,
   }
 }
 
+.features__wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 .features__wrapper h4 {
   margin: 0;
   padding: 0;
@@ -3412,6 +3417,7 @@ button,
       grid-row-start: 3;
   padding: 50px 30px;
   padding-top: 40px;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .features__item--center {
@@ -3456,21 +3462,16 @@ button,
   line-height: 90%;
   font-size: 74px;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
 }
 @media (min-width: 768px) {
   .features__item--center p {
-    text-align: center;
     line-height: 113%;
-    padding-left: 36px;
   }
 }
 @media (min-width: 1200px) {
   .features__item--center p {
-    text-align: center;
     line-height: 124%;
-    padding-left: 27px;
   }
 }
 
