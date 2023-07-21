@@ -20,14 +20,13 @@
     font-size: 32px;
     font-weight: 600;
     letter-spacing: 0.96px;
-    margin-left: -21px;
     padding-bottom: 45px;
 
     @media (min-width: $vp-768) {
       font-size: 42px;
       letter-spacing: 1.26px;
       padding-bottom: 45px;
-      margin-left: -21px;
+      margin-left: -2px;
     }
 
     @media (min-width: $vp-1200) {
@@ -35,6 +34,7 @@
       font-size: 54px;
       padding-bottom: 48px;
       padding-left: 21px;
+      margin-left: -21px;
     }
   }
 }
@@ -54,7 +54,7 @@
 
   @media (min-width: $vp-1200) {
     grid-template-columns: 1fr 240px 1fr;
-    gap: 150px 60px;
+    gap: 130px 60px;
   }
 }
 
@@ -90,11 +90,13 @@
       font-size: 58px;
       font-weight: 700;
       line-height: 90%;
+      margin-top: 1px;
     }
 
     @media (min-width: $vp-1200) {
       font-size: 71px;
       font-weight: 700;
+      margin-top: -13px;
     }
   }
 
@@ -145,7 +147,7 @@
     @media (min-width: $vp-768) {
       padding: 0;
       text-align: start;
-      padding-right: 16px;
+      padding-right: 6px;
     }
 
     @media (min-width: $vp-1200) {
@@ -159,8 +161,7 @@
   background: $resolution-blue;
   gap: 0;
   grid-row-start: 3;
-  padding: 50px 30px;
-  padding-top: 40px;
+  padding: 40px 30px 47px;
   text-align: center;
 
   @media (min-width: $vp-768) {
@@ -213,6 +214,7 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 150%;
+    padding-bottom: 13px;
 
     @media (min-width: $vp-768) {
       text-align: center;
@@ -235,7 +237,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 140%;
-    padding: 0 12px;
+    padding: 0 27px;
     color: $color-default-white;
     text-align: center;
 

@@ -1,18 +1,18 @@
 .reviews {
-  padding-top: 62px 15px 70px;
+  padding: 62px 0;
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 27px;
   max-width: 700px;
   margin: 0 auto;
 
   @media (min-width: $vp-768) {
     padding-top: 92px;
-    padding-bottom: 95px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: $vp-1200) {
     padding-top: 120px;
-    padding-bottom: 115px;
+    padding-bottom: 104px;
   }
 
   h2 {
@@ -70,10 +70,9 @@
   padding: 40px 25px 36px;
   max-width: 100%;
   background-color: $resolution-blue;
-  box-shadow: 0 0 40px rgb(28, 51, 116, 0.2);
 
   @media (min-width: $vp-768) {
-    padding: 55px 65px 57px;
+    padding: 61px 65px 55px 51px;
   }
 
   @media (min-width: $vp-1200) {
@@ -92,8 +91,13 @@
 
   @media (min-width: $vp-768) {
     grid-template-columns: 80px 1fr;
+    column-gap: 42px;
+    row-gap: 16px;
+  }
+
+  @media (min-width: $vp-1200) {
     column-gap: 28px;
-    row-gap: 11px;
+    row-gap: 16px;
   }
 }
 
@@ -129,6 +133,10 @@
   font-size: 20px;
   line-height: 26px;
   color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    margin-top: -3px;
+  }
 
   @media (min-width: $vp-1200) {
     margin: 0;

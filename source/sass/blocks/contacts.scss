@@ -12,14 +12,14 @@
 
 .contacts {
   border-top: 1px solid $dark-grey;
-  padding: 64px 14px;
+  padding: 60px 14px 64px;
 
   @media (min-width: $vp-768) {
-    padding: 61px 30px 66px 132px;
+    padding: 61px 30px 63px 132px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 56px 30px 62px 120px;
+    padding: 56px 30px 57px 120px;
   }
 }
 

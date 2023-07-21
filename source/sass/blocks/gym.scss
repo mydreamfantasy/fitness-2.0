@@ -72,12 +72,14 @@
     @media (min-width: $vp-768) {
       text-align: center;
       padding-bottom: 34px;
+      margin-left: -15px;
     }
 
     @media (min-width: $vp-1200) {
       padding-bottom: 39px;
       padding-left: 0;
       text-align: start;
+      margin-left: 0;
     }
   }
 
@@ -143,7 +145,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    bottom: -114px;
+    top: 286px;
     left: 540px;
     width: 364px;
     height: 228px;

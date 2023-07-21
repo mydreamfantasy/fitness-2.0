@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding-top: 145px;
+    padding-top: 130px;
     padding-bottom: 120px;
   }
 
@@ -236,10 +236,6 @@
     @media (min-width: $vp-768) {
       padding-bottom: 44px;
       text-align: start;
-
-      &:last-of-type {
-        padding-bottom: 67px;
-      }
     }
 
     @media (min-width: $vp-1200) {
@@ -275,6 +271,16 @@
   @media (min-width: $vp-768) {
     left: 0;
     transform: translate(0, 0);
+
+    &--last {
+      margin-top: 28px;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    &--last {
+      margin-top: 0;
+    }
   }
 
   &:hover {

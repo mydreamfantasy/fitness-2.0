@@ -186,8 +186,14 @@
     padding-top: 32px;
   }
 
-  p {
+  span {
     margin: 0;
+    display: block;
+    width: 254px;
+
+    @media (min-width: $vp-768) {
+      width: auto;
+    }
   }
 }
 
