@@ -1563,6 +1563,10 @@ button,
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 10px 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #ffffff;
   border: none;
   cursor: pointer;
@@ -1711,6 +1715,10 @@ button,
   display: block;
 }
 
+.header-nav__logo:hover {
+  opacity: 0.3;
+}
+
 .header-nav__phone {
   margin: 0;
   padding: 0;
@@ -1731,6 +1739,10 @@ button,
 .footer__logo {
   display: inline-block;
   padding-bottom: 14px;
+}
+
+.footer__logo:hover {
+  opacity: 0.3;
 }
 
 .footer__nav {
@@ -1908,6 +1920,10 @@ button,
   white-space: nowrap;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-banner__button:hover,
@@ -2264,6 +2280,10 @@ button,
   text-transform: uppercase;
   color: #102654;
   border: 2px solid #102654;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscription__sub-button:hover,
@@ -2839,6 +2859,10 @@ button,
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .promo__red-link::after {
@@ -2922,6 +2946,10 @@ button,
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .promo__block-link::after {
@@ -3408,6 +3436,10 @@ button,
   color: #ffffff;
   border: 3px solid #ffffff;
   background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .free-class__btn:hover,
@@ -3516,6 +3548,10 @@ button,
 
 .tabs__control {
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .tabs__control.is-active {
