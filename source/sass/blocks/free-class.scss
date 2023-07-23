@@ -133,6 +133,7 @@
   color: $color-default-white;
   border: 3px solid $color-default-white;
   background: transparent;
+  user-select: none;
 
   &:hover,
   &:active,

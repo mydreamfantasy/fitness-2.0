@@ -1,5 +1,6 @@
 .tabs__control {
   cursor: pointer;
+  user-select: none;
 
   &.is-active {
     opacity: 1;

@@ -288,6 +288,7 @@
   text-transform: uppercase;
   color: $gym-color;
   border: 2px solid $gym-color;
+  user-select: none;
 
   &:hover,
   &:focus-visible {

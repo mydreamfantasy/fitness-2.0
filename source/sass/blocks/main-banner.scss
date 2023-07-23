@@ -171,6 +171,7 @@
   text-align: center;
   white-space: nowrap;
   transition: $trans-default;
+  user-select: none;
 
   &:hover,
   &:focus-visible {

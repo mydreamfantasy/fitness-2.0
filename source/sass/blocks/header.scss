@@ -18,6 +18,10 @@
 
 .header-nav__logo {
   display: block;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .header-nav__logo-img {
