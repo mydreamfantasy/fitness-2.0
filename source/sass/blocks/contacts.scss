@@ -123,8 +123,20 @@
   @media (min-width: $vp-768) {
     order: 0;
   }
+
+  a {
+    display: block;
+    width: 100px;
+  }
 }
 
 .contacts__item-email {
   order: 4;
+
+  a {
+    display: block;
+    white-space: pre-wrap;
+    width: 160px;
+    word-wrap: break-word;
+  }
 }

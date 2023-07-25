@@ -41,19 +41,23 @@
   margin: 0;
   padding: 0;
   color: $color-default-white;
-  font-size: 15px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.4px;
+  margin-top: -2px;
 
   @media (min-width: $vp-768) {
-    margin-top: 0;
-    font-size: 18px;
+    margin-top: -4px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
   }
 
   @media (min-width: $vp-1200) {
-    margin-top: -6px;
-    font-size: 20px;
+    margin-top: -10px;
+    font-size: 24px;
+    letter-spacing: 1.48px;
   }
 }

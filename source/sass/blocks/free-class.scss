@@ -57,6 +57,10 @@
   justify-content: space-between;
   gap: 31px;
 
+  div {
+    width: 100%;
+  }
+
   @media (min-width: $vp-768) {
     margin: 0 0 30px;
     gap: 50px;
@@ -105,10 +109,6 @@
     &:disabled {
       opacity: 0.3;
     }
-
-    &--error {
-      border-color: $torch-red;
-    }
   }
 }
 
@@ -134,20 +134,31 @@
   border: 3px solid $color-default-white;
   background: transparent;
   user-select: none;
+  cursor: pointer;
 
   &:hover,
-  &:active,
-  &:focus {
-    border: 3px solid $torch-red;
-    color: $torch-red;
+  &:focus-visible {
+    outline: none;
+    background-color: $color-default-white;
+    color: $price;
   }
 
   &:active {
-    border: 3px solid $torch-red;
-    color: $color-default-white;
+    background-color: $color-default-white;
+    color: $gym-color;
   }
 
-  &:focus-visible {
-    outline: none;
+  &:disabled {
+    opacity: 0.3s;
   }
+}
+
+.is-invalid .free-class__label {
+  input {
+    border-color: $torch-red;
+  }
+}
+
+.is-invalid span {
+  color: $torch-red;
 }

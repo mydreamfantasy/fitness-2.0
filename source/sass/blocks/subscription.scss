@@ -2,7 +2,7 @@
   position: relative;
   background: $subscription-color;
   padding: 64px 15px;
-  padding-bottom: 97px;
+  padding-bottom: 29px;
 
   @media (min-width: $vp-768) {
     padding: 100px 45px;
@@ -67,6 +67,7 @@
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 45px;
   list-style-type: none;
   margin-top: 19px;
@@ -78,7 +79,7 @@
     position: absolute;
     bottom: 1px;
     width: 290px;
-    height: 1px;
+    height: 2px;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: rgba(120, 120, 120, 0.2);
@@ -90,7 +91,6 @@
     &::after {
       bottom: 1px;
       width: 340px;
-      height: 1px;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -98,9 +98,7 @@
 
   @media (min-width: $vp-1200) {
     &::after {
-      bottom: 1px;
-      width: 340px;
-      height: 1px;
+      height: 2px;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -130,7 +128,7 @@
       bottom: -11px;
       left: 0;
       width: 100%;
-      height: 1px;
+      height: 2px;
       background-color: $rose-color;
     }
   }
@@ -163,13 +161,13 @@
 
   @media (min-width: $vp-1200) {
     display: none;
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 40px;
     padding-top: 34px;
 
     &.is-active {
-      display: flex;
+      display: grid;
     }
   }
 }

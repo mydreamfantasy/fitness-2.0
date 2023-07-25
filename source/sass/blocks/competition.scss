@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: $color-default-white;
   padding-bottom: 66px;
+  padding-top: 69px;
 
   @media (min-width: $vp-768) {
     padding-top: 107px;
@@ -54,11 +56,8 @@
   flex-direction: column;
 
   @media (min-width: $vp-768) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $vp-1200) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1.32fr;
   }
 }
 
@@ -212,11 +211,17 @@
   &:hover,
   &:focus-visible {
     outline: none;
-    opacity: 0.3;
+    background-color: $color-default-white;
+    color: $torch-red;
   }
 
   &:active {
-    color: $gym-color;
+    background-color: $color-default-white;
+    color: $rose-color;
+  }
+
+  &:disabled {
+    opacity: 0.3s;
   }
 
   @media (min-width: $vp-768) {

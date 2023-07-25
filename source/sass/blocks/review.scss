@@ -1,7 +1,6 @@
 .reviews {
-  padding: 62px 0;
+  padding: 62px 0 68px;
   position: relative;
-  padding-bottom: 27px;
   max-width: 700px;
   margin: 0 auto;
 
@@ -12,7 +11,7 @@
 
   @media (min-width: $vp-1200) {
     padding-top: 120px;
-    padding-bottom: 104px;
+    padding-bottom: 119px;
   }
 
   h2 {
