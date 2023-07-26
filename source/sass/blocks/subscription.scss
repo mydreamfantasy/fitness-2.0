@@ -48,6 +48,7 @@
   @media (min-width: $vp-768) {
     display: block;
     position: absolute;
+    z-index: 1;
     right: 0;
     bottom: -131px;
 
@@ -72,7 +73,7 @@
   list-style-type: none;
   margin-top: 19px;
   padding-bottom: 12px;
-  transition: $trans-default;
+  transition: 1s ease-in-out;
 
   &::after {
     content: "";
@@ -139,20 +140,13 @@
 }
 
 .subscription__sub-list {
-  position: relative;
   margin: 0 auto;
   padding: 40px 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   list-style-type: none;
   align-items: center;
   gap: 33px;
-  height: auto;
-  transition: $trans-default;
-
-  &.is-active {
-    display: flex;
-  }
 
   @media (min-width: $vp-768) {
     padding: 42px 0;
@@ -160,15 +154,11 @@
   }
 
   @media (min-width: $vp-1200) {
-    display: none;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     gap: 40px;
     padding-top: 34px;
-
-    &.is-active {
-      display: grid;
-    }
   }
 }
 

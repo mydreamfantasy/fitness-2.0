@@ -160,7 +160,8 @@
 
   @media (min-width: $vp-1200) {
     top: 286px;
-    left: 540px;
+    left: 54%;
+    transform: translate(-54%, 0);
     width: 364px;
     height: 228px;
   }

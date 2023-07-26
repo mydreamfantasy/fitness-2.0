@@ -32,9 +32,7 @@ export class Tabs {
 
   _initAllTabs() {
     const tabs = document.querySelectorAll('[data-tabs="parent"]');
-    const forLoadTabs = document.querySelectorAll(
-        '[data-tabs="element"].for-load'
-    );
+    const forLoadTabs = document.querySelectorAll('[data-tabs="element"].for-load');
     tabs.forEach((tab) => {
       this._initTab(tab);
     });
@@ -54,19 +52,9 @@ export class Tabs {
     });
   }
 
-  _setTabStartState(
-      tab,
-      dataHeight,
-      tabElements,
-      tabContentElement,
-      tabControlElements,
-      dataDelay
-  ) {
+  _setTabStartState(tab, dataHeight, tabElements, tabContentElement, tabControlElements, dataDelay) {
     const activeIndex = this._returnActiveIndex(tabControlElements);
-    const blockHeight =
-      dataHeight === 'max'
-        ? this._returnMaxHeight(tabElements)
-        : tabElements[activeIndex].offsetHeight;
+    const blockHeight = dataHeight === 'max' ? this._returnMaxHeight(tabElements) : tabElements[activeIndex].offsetHeight;
     this._removeAllActiveClasses(tabControlElements, tabElements);
     tab.classList.add('no-transition');
     tabControlElements[activeIndex].classList.add('is-active');
@@ -127,9 +115,7 @@ export class Tabs {
   }
 
   _updateTabHeight() {
-    const activeElements = document.querySelectorAll(
-        '[data-tabs="element"].is-active'
-    );
+    const activeElements = document.querySelectorAll('[data-tabs="element"].is-active');
     activeElements.forEach((element) => {
       let transition = false;
       const parent = element.closest('[data-tabs="parent"]');
@@ -143,14 +129,8 @@ export class Tabs {
   _setTabElementHeight(element, transition) {
     const parentElement = element.closest('[data-tabs="parent"]');
     const dataHeight = parentElement.dataset.height;
-    const contentElement = this._returnScopeChild(
-        parentElement.querySelectorAll('[data-tabs="content"]'),
-        parentElement
-    );
-    const tabElements = this._returnScopeList(
-        parentElement.querySelectorAll('[data-tabs="element"]'),
-        parentElement
-    );
+    const contentElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="content"]'), parentElement);
+    const tabElements = this._returnScopeList(parentElement.querySelectorAll('[data-tabs="element"]'), parentElement);
 
     if (!transition) {
       parentElement.classList.add('no-transition');
@@ -161,12 +141,7 @@ export class Tabs {
     } else if (dataHeight === 'unset') {
       contentElement.style.height = null;
     } else {
-      contentElement.style.height = `${
-        this._returnScopeChild(
-            parentElement.querySelectorAll('[data-tabs="element"].is-active'),
-            parentElement
-        ).offsetHeight
-      }px`;
+      contentElement.style.height = `${this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement).offsetHeight}px`;
     }
 
     setTimeout(() => parentElement.classList.remove('no-transition'));
@@ -176,22 +151,14 @@ export class Tabs {
     const dataHeight = tab.dataset.height;
     const dataDelay = tab.dataset.delay ? tab.dataset.delay : 0;
     const tabContentElement = tab.querySelector('[data-tabs="content"]');
-    const tabControlElements = this._returnScopeList(
-        tab.querySelectorAll('[data-tabs="control"]'),
-        tab
-    );
-    const tabElements = this._returnScopeList(
-        tab.querySelectorAll('[data-tabs="element"]'),
-        tab
-    );
-    this._setTabStartState(
-        tab,
-        dataHeight,
-        tabElements,
-        tabContentElement,
-        tabControlElements,
-        dataDelay
-    );
+    const tabControlElements = this._returnScopeList(tab.querySelectorAll('[data-tabs="control"]'), tab);
+    const tabElements = this._returnScopeList(tab.querySelectorAll('[data-tabs="element"]'), tab);
+    this._setTabStartState(tab, dataHeight, tabElements, tabContentElement, tabControlElements, dataDelay);
+    if (dataHeight !== 'unset') {
+      tabElements.forEach((element) => {
+        this._resizeObserver().observe(element);
+      });
+    }
     setTimeout(() => {
       tab.classList.remove('no-transition-global');
     });
@@ -205,33 +172,19 @@ export class Tabs {
     const currentIndex = control.dataset.index;
     const parentElement = control.closest('[data-tabs="parent"]');
 
-    if (
-      control.classList.contains('is-active') ||
-      parentElement.classList.contains('no-action')
-    ) {
+    if (control.classList.contains('is-active') || parentElement.classList.contains('no-action')) {
       return;
     }
 
-    const dataDelay = parentElement.dataset.delay
-      ? parentElement.dataset.delay
-      : 0;
+    const dataDelay = parentElement.dataset.delay ? parentElement.dataset.delay : 0;
     const dataHeight = parentElement.dataset.height;
     const contentElement = parentElement.querySelector('[data-tabs="content"]');
-    const tabElements = this._returnScopeList(
-        parentElement.querySelectorAll('[data-tabs="element"]'),
-        parentElement
-    );
-    const activeControl = this._returnScopeChild(
-        parentElement.querySelectorAll('[data-tabs="control"].is-active'),
-        parentElement
-    );
-    const activeElement = this._returnScopeChild(
-        parentElement.querySelectorAll('[data-tabs="element"].is-active'),
-        parentElement
-    );
+    const tabElements = this._returnScopeList(parentElement.querySelectorAll('[data-tabs="element"]'), parentElement);
+
+    const activeControl = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="control"].is-active'), parentElement);
+    const activeElement = this._returnScopeChild(parentElement.querySelectorAll('[data-tabs="element"].is-active'), parentElement);
     const currentHeight = contentElement.offsetHeight;
-    const newHeight =
-      tabElements[currentIndex] && tabElements[currentIndex].offsetHeight;
+    const newHeight = tabElements[currentIndex].offsetHeight;
 
     parentElement.classList.add('no-action');
     document.activeElement.blur();
@@ -259,9 +212,7 @@ export class Tabs {
       }
       setTimeout(() => {
         control.classList.add('is-active');
-        if (tabElements[currentIndex]) {
-          tabElements[currentIndex].classList.add('is-active');
-        }
+        tabElements[currentIndex].classList.add('is-active');
         parentElement.classList.remove('no-action');
       }, dataDelay);
     }

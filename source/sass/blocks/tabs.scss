@@ -1,6 +1,31 @@
+// .tabs {
+//   max-width: 100%;
+// }
+
+// .tabs__control {
+//   cursor: pointer;
+//   user-select: none;
+
+//   &.is-active {
+//     opacity: 1;
+//     pointer-events: none;
+//   }
+// }
+
+// .tabs__content {
+//   transition: height 0.3s;
+// }
+
+// .tabs__element {
+//   display: none;
+// }
+
+.tabs {
+  max-width: 100%;
+}
+
 .tabs__control {
   cursor: pointer;
-  user-select: none;
 
   &.is-active {
     opacity: 1;
@@ -13,5 +38,15 @@
 }
 
 .tabs__element {
-  display: none;
+  width: 100%;
+}
+
+.tabs--unset .tabs__content {
+  height: 100px;
+}
+
+.tabs--unset .tabs__element {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

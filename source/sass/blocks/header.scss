@@ -38,6 +38,7 @@
 }
 
 .header-nav__phone {
+  display: block;
   margin: 0;
   padding: 0;
   color: $color-default-white;
@@ -48,6 +49,7 @@
   line-height: normal;
   letter-spacing: 0.4px;
   margin-top: -2px;
+  width: 155px;
 
   @media (min-width: $vp-768) {
     margin-top: -4px;
