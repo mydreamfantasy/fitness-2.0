@@ -312,7 +312,7 @@
 
         <div class="trainers__slider swiper" data-swiper="trainers">
           <ul class="trainers__list swiper-wrapper">
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-ann.webp 1x, img/trainers/trainer-ann@2x.webp 2x" />
@@ -330,7 +330,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-alex.webp 1x, img/trainers/trainer-alex@2x.webp 2x" />
@@ -349,7 +349,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-aleks.webp 1x, img/trainers/trainer-aleks@2x.webp 2x" />
@@ -368,7 +368,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-maria.webp 1x, img/trainers/trainer-maria@2x.webp 2x" />
@@ -387,7 +387,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-ann.webp 1x, img/trainers/trainer-ann@2x.webp 2x" />
@@ -405,7 +405,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-aleks.webp 1x, img/trainers/trainer-aleks@2x.webp 2x" />
@@ -424,7 +424,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-alex.webp 1x, img/trainers/trainer-alex@2x.webp 2x" />
@@ -443,7 +443,7 @@
                 </ul>
               </div>
             </li>
-            <li class="trainers__item swiper-slide" tabindex="0">
+            <li class="trainers__item swiper-slide">
               <picture>
                 <source type="image/webp"
                   srcset="img/trainers/trainer-maria.webp 1x, img/trainers/trainer-maria@2x.webp 2x" />
@@ -577,10 +577,10 @@
             <div class="accordion tabs__element faq__acc-list for-load" data-accordion="parent" data-tabs="element">
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn">
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1">
                     <span>Как стать членом фитнес-центра?</span>
+                    <span class="faq__acc-click" tabindex="0"></span>
                   </button>
-                  <span class="faq__acc-click"></span>
                 </div>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
@@ -594,9 +594,12 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Где можно посмотреть
-                      расписание?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Где можно посмотреть
+                      расписание?</span>
+                    <span class="faq__acc-click" tabindex="0">
+                    </span>
+                  </button>
+
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -611,9 +614,11 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Есть кулеры в&nbsp;центре? Предоставляются
-                      полотенца?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Есть кулеры в&nbsp;центре?
+                      Предоставляются
+                      полотенца?</span>
+                    <span class="faq__acc-click" tabindex="0">
+                    </span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -628,9 +633,10 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Сколько тренеров работает в&nbsp;клубе
-                      и&nbsp;какова их&nbsp;квалификация?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Сколько тренеров работает
+                      в&nbsp;клубе
+                      и&nbsp;какова их&nbsp;квалификация?</span><span class="faq__acc-click"
+                      tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -647,9 +653,8 @@
             <div class="accordion tabs__element faq__acc-list for-load" data-accordion="parent" data-tabs="element">
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn btn--aquamarine"><span>Занятия с&nbsp;тренером
-                      входят в&nbsp;абонемент?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Занятия с&nbsp;тренером
+                      входят в&nbsp;абонемент?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -664,9 +669,8 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Можно&nbsp;ли заморозить
-                      абонемент?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Можно&nbsp;ли заморозить
+                      абонемент?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
@@ -680,9 +684,10 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Есть&nbsp;ли лимит по&nbsp;посещениям
-                      тренажерного зала и&nbsp;групповых занятий?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Есть&nbsp;ли лимит
+                      по&nbsp;посещениям
+                      тренажерного зала и&nbsp;групповых занятий?</span><span class="faq__acc-click"
+                      tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -697,9 +702,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Что такое семейный доступ и&nbsp;доступ
-                      для друзей?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Что такое семейный доступ
+                      и&nbsp;доступ
+                      для друзей?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -716,9 +721,10 @@
             <div class="accordion tabs__element faq__acc-list for-load" data-accordion="parent" data-tabs="element">
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Предлагает&nbsp;ли клуб услуги
-                      по&nbsp;консультированию по&nbsp;вопросам питания?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Предлагает&nbsp;ли клуб
+                      услуги
+                      по&nbsp;консультированию по&nbsp;вопросам питания?</span><span class="faq__acc-click"
+                      tabindex="0"></span></button>
                 </div>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
@@ -729,9 +735,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Проводятся&nbsp;ли в&nbsp;клубе какие-либо
-                      мероприятия или соревнования?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Проводятся&nbsp;ли
+                      в&nbsp;клубе какие-либо
+                      мероприятия или соревнования?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -746,9 +752,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Можно&nbsp;ли приобрести в&nbsp;центре
-                      спортивное питание?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Можно&nbsp;ли приобрести
+                      в&nbsp;центре
+                      спортивное питание?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -763,9 +769,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Есть&nbsp;ли в&nbsp;центре детская
-                      комната?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Есть&nbsp;ли в&nbsp;центре
+                      детская
+                      комната?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -782,9 +788,8 @@
             <div class="accordion tabs__element faq__acc-list for-load" data-accordion="parent" data-tabs="element">
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn btn--aquamarine"><span>Есть в&nbsp;фитнес-центре
-                      дресс-код?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Есть в&nbsp;фитнес-центре
+                      дресс-код?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -801,9 +806,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Можно&nbsp;ли приводить с&nbsp;собой детей
-                      на&nbsp;тренировки?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Можно&nbsp;ли приводить
+                      с&nbsp;собой детей
+                      на&nbsp;тренировки?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
                 <div class="accordion__content" data-accordion="content">
                   <div class="accordion__wrapper">
@@ -817,9 +822,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Какие дополнительные правила посещения
-                      центра?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Какие дополнительные правила
+                      посещения
+                      центра?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -834,9 +839,9 @@
               </div>
               <div class="faq__acc-item accordion__element" data-accordion="element">
                 <div class="faq__acc-wrap" data-accordion="button">
-                  <button class="faq__acc-button accordion__button btn"><span>Нужна&nbsp;ли медицинская справка для
-                      посещения залов и&nbsp;бассейна?</span></button>
-                  <span class="faq__acc-click"></span>
+                  <button class="faq__acc-button accordion__button btn" tabindex="-1"><span>Нужна&nbsp;ли медицинская
+                      справка для
+                      посещения залов и&nbsp;бассейна?</span><span class="faq__acc-click" tabindex="0"></span></button>
                 </div>
 
                 <div class="accordion__content" data-accordion="content">
@@ -980,9 +985,6 @@
             <ul class="footer__list">
               <li class="footer__item"><a href="#">Услуги</a></li>
               <li class="footer__item"><a href="#">Абонементы</a></li>
-            </ul>
-
-            <ul class="footer__list">
               <li class="footer__item"><a href="#">Акции</a></li>
               <li class="footer__item"><a href="#">Тренеры</a></li>
               <li class="footer__item"><a href="#">Расписание</a></li>
