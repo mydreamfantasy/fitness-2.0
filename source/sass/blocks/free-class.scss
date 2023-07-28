@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 56px 170px 62px 103px;
+    padding: 56px 170px 60px 103px;
   }
 
   h2 {
@@ -59,6 +59,7 @@
 
   div {
     width: 100%;
+    position: relative;
   }
 
   @media (min-width: $vp-768) {
@@ -149,7 +150,7 @@
   }
 
   &:disabled {
-    opacity: 0.3s;
+    opacity: 0.3;
   }
 }
 
@@ -160,5 +161,10 @@
 }
 
 .is-invalid span {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -22px;
+  left: 0;
   color: $torch-red;
 }

@@ -1,18 +1,36 @@
 .main-banner {
   padding-top: 70px;
-  background: conic-gradient(from 167deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+  background: conic-gradient(
+    from 167deg at 35.31% 34.22%,
+    #b80027 -46.69deg,
+    #003d85 32.24deg,
+    #b80027 313.31deg,
+    #003d85 392.24deg
+  );
   background-color: $percian-blue;
 
   @media (min-width: $vp-768) {
     display: flex;
     gap: 30px;
-    background: conic-gradient(from 155deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    background: conic-gradient(
+      from 155deg at 20.7% 35.74%,
+      #b80027 -46.69deg,
+      #003d85 32.24deg,
+      #b80027 313.31deg,
+      #003d85 392.24deg
+    );
     background-color: $percian-blue;
   }
 
   @media (min-width: $vp-1200) {
     gap: 59px;
-    background-image: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+    background-image: conic-gradient(
+      from 150.87deg at 16.03% 39.06%,
+      #b80027 -46.69deg,
+      #003d85 32.24deg,
+      #b80027 313.31deg,
+      #003d85 392.24deg
+    );
     background-color: $percian-blue;
   }
 
@@ -175,6 +193,7 @@
 
   &:hover,
   &:focus-visible {
+    outline: none;
     color: $price;
     background-color: $color-default-white;
   }

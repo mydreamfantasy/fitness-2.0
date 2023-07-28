@@ -212,16 +212,16 @@
   &:focus-visible {
     outline: none;
     background-color: $color-default-white;
-    color: $torch-red;
+    color: $price;
   }
 
   &:active {
     background-color: $color-default-white;
-    color: $rose-color;
+    color: $gym-color;
   }
 
   &:disabled {
-    opacity: 0.3s;
+    opacity: 0.3;
   }
 
   @media (min-width: $vp-768) {

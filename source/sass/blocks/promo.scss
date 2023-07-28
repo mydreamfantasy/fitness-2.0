@@ -157,6 +157,11 @@
     outline: 1px solid $color-default-white;
     outline-offset: 10px;
   }
+
+  &:active {
+    opacity: 1;
+    color: $color-default-white;
+  }
 }
 
 .promo__photo {
@@ -292,5 +297,10 @@
   &:focus-visible {
     outline: 1px solid $resolution-blue;
     outline-offset: 10px;
+  }
+
+  &:active {
+    opacity: 1;
+    color: $resolution-blue;
   }
 }

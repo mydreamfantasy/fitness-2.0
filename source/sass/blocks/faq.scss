@@ -38,7 +38,7 @@
 }
 
 .faq__title {
-  color: $price;
+  color: $gym-color;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   line-height: normal;
@@ -109,6 +109,7 @@
 
   &:hover,
   &:focus-visible {
+    outline: none;
     border-color: $gym-color;
   }
 
@@ -155,14 +156,9 @@
   }
 }
 
-.faq__acc-wrap {
+.faq__acc-button {
   display: flex;
   justify-content: space-between;
-  align-items: end;
-}
-
-.faq__acc-button {
-  display: inline-block;
   position: relative;
   margin: 0;
   padding: 0;
@@ -171,27 +167,32 @@
   padding-top: 18px;
   letter-spacing: 0.1px;
   text-align: start;
-  width: 78%;
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
 
+  span:first-of-type {
+    width: 250px;
+  }
+
+  @media (min-width: $vp-375) {
+    span:first-of-type {
+      width: 300px;
+    }
+  }
+
   @media (min-width: $vp-768) {
     padding-top: 30px;
-    width: 90%;
     font-size: 24px;
+
+    span:first-of-type {
+      width: 500px;
+    }
   }
 
-  @media (min-width: $vp-1200) {
-    padding-top: 32px;
-  }
-
-  span {
-    margin: 0;
-    display: block;
-    width: 254px;
-
-    @media (min-width: $vp-768) {
+  @media (min-width: $vp-1024) {
+    span:first-of-type {
       width: auto;
     }
   }
@@ -201,11 +202,13 @@
   height: 32px;
   width: 32px;
   align-self: center;
+  cursor: pointer;
   margin-bottom: -18px;
+  background: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Ccircle cx='16' cy='16' r='15.5' stroke='%231C3374'/%3E%3Cpath d='M16 10V16M16 22V16M16 16H22M16 16H10' stroke='%231C3374'/%3E%3C/svg%3E");
 
   @media (min-width: $vp-768) {
-    margin-bottom: -29px;
+    margin-top: -19px;
     height: 42px;
     width: 42px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='42' height='42' viewBox='0 0 42 42' fill='none'%3E%3Ccircle cx='21' cy='21' r='20.5' stroke='%231C3374'/%3E%3Cpath d='M21 12V21M21 30V21M21 21H30M21 21H12' stroke='%231C3374'/%3E%3C/svg%3E");
@@ -213,6 +216,7 @@
 
   &:hover,
   &:focus {
+    outline: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Ccircle cx='16' cy='16' r='15.5' fill='%23102654'/%3E%3Cpath d='M16 10V16M16 22V16M16 16H22M16 16H10' stroke='white'/%3E%3C/svg%3E");
 
     @media (min-width: $vp-768) {

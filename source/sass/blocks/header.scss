@@ -49,17 +49,28 @@
   line-height: normal;
   letter-spacing: 0.4px;
   margin-top: -2px;
-  width: 155px;
+  width: 115px;
 
   @media (min-width: $vp-768) {
     margin-top: -4px;
     font-size: 24px;
     letter-spacing: 0.5px;
+    width: 155px;
   }
 
   @media (min-width: $vp-1200) {
     margin-top: -10px;
     font-size: 24px;
     letter-spacing: 1.48px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

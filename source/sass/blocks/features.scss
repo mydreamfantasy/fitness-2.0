@@ -13,7 +13,7 @@
   h2 {
     margin: 0;
     padding: 0;
-    color: $price;
+    color: $gym-color;
     font-family: "Alumni Sans", "Arial", sans-serif;
     line-height: normal;
     text-align: center;
@@ -68,7 +68,7 @@
 
   @media (min-width: $vp-768) {
     flex-direction: row;
-    gap: 30px;
+    gap: 0 30px;
     align-items: start;
   }
 }
@@ -86,7 +86,7 @@
     font-size: 58px;
     font-weight: 700;
     line-height: 90%;
-    background: linear-gradient(129deg, #d10a42 0%, #0041ca 100%);
+    background: linear-gradient(129deg, #d10a42 0%, #0041ca 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -216,7 +216,6 @@
   h4 {
     color: $color-default-white;
     text-align: center;
-    letter-spacing: 1px;
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -234,9 +233,8 @@
       text-align: center;
       color: $color-default-white;
       padding-bottom: 30px;
-      letter-spacing: 2px;
-      font-size: 22px;
-      line-height: 170%;
+      font-size: 26px;
+      line-height: 150%;
     }
   }
 

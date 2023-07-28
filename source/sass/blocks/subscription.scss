@@ -64,10 +64,13 @@
 
 .subscription__list {
   position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
   flex-wrap: wrap;
   gap: 45px;
   list-style-type: none;
@@ -78,7 +81,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 1px;
+    bottom: -3px;
     width: 290px;
     height: 2px;
     left: 50%;
@@ -91,7 +94,7 @@
 
     &::after {
       bottom: 1px;
-      width: 340px;
+      width: 100%;
       left: 50%;
       transform: translate(-50%, 0);
     }
@@ -120,13 +123,29 @@
   cursor: pointer;
   transition: $trans-default;
 
+  &:focus-visible,
+  &:hover {
+    outline: none;
+    color: $gym-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $rose-color;
+    }
+  }
+
   &.is-active {
     color: $gym-color;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: -11px;
+      bottom: -15px;
       left: 0;
       width: 100%;
       height: 2px;
@@ -136,6 +155,22 @@
 
   @media (min-width: $vp-768) {
     font-size: 20px;
+    &:focus-visible,
+    &:hover {
+      color: $gym-color;
+
+      &::after {
+        bottom: -11px;
+      }
+    }
+
+    &.is-active {
+      color: $gym-color;
+
+      &::after {
+        bottom: -11px;
+      }
+    }
   }
 }
 
@@ -172,9 +207,25 @@
 
   &:hover,
   &:focus {
+    border: 7px solid $gym-color;
+
+    & .subscription__sub-button {
+      border-color: $gym-color;
+      outline: none;
+    }
+  }
+
+  &:active {
     border: 7px solid;
     border-image: $red-blue-right;
     border-image-slice: 1;
+
+    & .subscription__sub-button {
+      border: none;
+      padding: 26px 45px;
+      color: $color-default-white;
+      background: $red-blue-right;
+    }
   }
 
   @media (min-width: $vp-768) {
@@ -275,20 +326,20 @@
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: $gym-color;
-  border: 2px solid $gym-color;
+  border: 2px solid rgba(16, 38, 84, 0.2);
   user-select: none;
 
   &:hover,
   &:focus-visible {
-    border: none;
+    border-color: $gym-color;
     outline: none;
-    padding: 26px 45px;
-    color: $color-default-white;
-    background: $red-blue-right;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 26px 45px;
+    color: $color-default-white;
+    background: $red-blue-right;
   }
 
   &:disabled {
