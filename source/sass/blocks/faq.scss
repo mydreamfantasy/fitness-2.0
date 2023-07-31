@@ -6,7 +6,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 98px;
   }
 
   @media (min-width: $vp-1200) {
@@ -132,10 +132,11 @@
   padding-bottom: 22px;
 
   @media (min-width: $vp-768) {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   &:last-of-type {
+    padding-bottom: 23px;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   }
 }
@@ -171,6 +172,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
+  border: none;
 
   span:first-of-type {
     width: 250px;
@@ -187,7 +189,7 @@
     font-size: 24px;
 
     span:first-of-type {
-      width: 500px;
+      width: 540px;
     }
   }
 

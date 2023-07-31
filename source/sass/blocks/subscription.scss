@@ -75,37 +75,11 @@
   gap: 45px;
   list-style-type: none;
   margin-top: 19px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
   transition: 1s ease-in-out;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    width: 290px;
-    height: 2px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgba(120, 120, 120, 0.2);
-  }
 
   @media (min-width: $vp-768) {
     gap: 46px;
-
-    &::after {
-      bottom: 1px;
-      width: 100%;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-  }
-
-  @media (min-width: $vp-1200) {
-    &::after {
-      height: 2px;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
   }
 }
 
@@ -122,6 +96,20 @@
   line-height: 150%;
   cursor: pointer;
   transition: $trans-default;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 185%;
+    height: 2px;
+    background-color: #dedfe1;
+  }
+
+  &:last-of-type::before {
+    width: 100%;
+  }
 
   &:focus-visible,
   &:hover {
@@ -156,11 +144,20 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
 
+    &::before {
+      bottom: -11px;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
     &:focus-visible,
     &:hover {
       color: $gym-color;
 
-      &::after {
+      &::after,
+      &::before {
         bottom: -11px;
       }
     }
@@ -207,16 +204,9 @@
   transition: $trans-modal;
 
   &:hover,
-  &:focus {
-    border: 7px solid $gym-color;
-
-    & .subscription__sub-button {
-      border-color: $gym-color;
-      outline: none;
-    }
-  }
-
+  &:focus-visible,
   &:active {
+    outline: none;
     border: 7px solid;
     border-image: $red-blue-right;
     border-image-slice: 1;

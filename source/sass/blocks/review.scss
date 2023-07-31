@@ -6,7 +6,7 @@
 
   @media (min-width: $vp-768) {
     padding-top: 92px;
-    padding-bottom: 79px;
+    padding-bottom: 103px;
   }
 
   @media (min-width: $vp-1200) {
@@ -91,7 +91,7 @@
   @media (min-width: $vp-768) {
     grid-template-columns: 80px 1fr;
     column-gap: 42px;
-    row-gap: 16px;
+    row-gap: 12px;
   }
 
   @media (min-width: $vp-1200) {
