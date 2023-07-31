@@ -2146,22 +2146,9 @@ button,
   gap: 45px;
   list-style-type: none;
   margin-top: 19px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-}
-
-.subscription__list::after {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  width: 290px;
-  height: 2px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  background-color: rgba(120, 120, 120, 0.2);
 }
 
 .subscription__tab {
@@ -2178,6 +2165,20 @@ button,
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+
+.subscription__tab::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 185%;
+  height: 2px;
+  background-color: #dedfe1;
+}
+
+.subscription__tab:last-of-type::before {
+  width: 100%;
 }
 
 .subscription__tab:focus-visible,
@@ -2239,17 +2240,9 @@ button,
 }
 
 .subscription__sub-item:hover,
-.subscription__sub-item:focus {
-  border: 7px solid #102654;
-}
-
-.subscription__sub-item:hover .subscription__sub-button,
-.subscription__sub-item:focus .subscription__sub-button {
-  border-color: #102654;
-  outline: none;
-}
-
+.subscription__sub-item:focus-visible,
 .subscription__sub-item:active {
+  outline: none;
   border: 7px solid;
   -o-border-image: linear-gradient(90deg, #d10a42, #00359f);
   border-image: -webkit-gradient(linear, left top, right top, from(#d10a42), to(#00359f));
@@ -2257,6 +2250,8 @@ button,
   border-image-slice: 1;
 }
 
+.subscription__sub-item:hover .subscription__sub-button,
+.subscription__sub-item:focus-visible .subscription__sub-button,
 .subscription__sub-item:active .subscription__sub-button {
   border: none;
   padding: 26px 45px;
@@ -3150,6 +3145,7 @@ button,
 }
 
 .faq__acc-item:last-of-type {
+  padding-bottom: 23px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
@@ -3180,6 +3176,7 @@ button,
   font-size: 18px;
   font-weight: 500;
   line-height: 120%;
+  border: none;
 }
 
 .faq__acc-button span:first-of-type {
@@ -3641,12 +3638,12 @@ button,
 
 .slider-control.is-reviews .swiper-button-prev {
   left: 3px;
-  top: 62%;
+  top: 53%;
 }
 
 .slider-control.is-reviews .swiper-button-next {
   right: 3px;
-  top: 62%;
+  top: 53%;
 }
 
 .accordion__wrapper p {
@@ -3663,10 +3660,6 @@ button,
 
 .accordion__element:last-child {
   margin-bottom: 0;
-}
-
-.accordion__button {
-  cursor: pointer;
 }
 
 .tabs {
@@ -3994,17 +3987,16 @@ button,
     gap: 46px;
   }
 
-  .subscription__list::after {
-    bottom: 1px;
-    width: 100%;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-  }
-
   .subscription__tab {
     font-size: 20px;
+  }
+
+  .subscription__tab::before {
+    bottom: -11px;
+  }
+
+  .subscription__tab:last-of-type {
+    padding-right: 0;
   }
 
   .subscription__tab:focus-visible,
@@ -4013,7 +4005,9 @@ button,
   }
 
   .subscription__tab:focus-visible::after,
-  .subscription__tab:hover::after {
+  .subscription__tab:focus-visible::before,
+  .subscription__tab:hover::after,
+  .subscription__tab:hover::before {
     bottom: -11px;
   }
 
@@ -4343,7 +4337,7 @@ button,
 
   .faq {
     padding-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 98px;
   }
 
   .faq__wrapper {
@@ -4378,7 +4372,7 @@ button,
   }
 
   .faq__acc-item {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 
   .faq__acc-item.is-active {
@@ -4395,7 +4389,7 @@ button,
   }
 
   .faq__acc-button span:first-of-type {
-    width: 500px;
+    width: 540px;
   }
 
   .faq__acc-click {
@@ -4412,7 +4406,7 @@ button,
 
   .reviews {
     padding-top: 92px;
-    padding-bottom: 79px;
+    padding-bottom: 103px;
   }
 
   .reviews h2 {
@@ -4436,7 +4430,7 @@ button,
     -webkit-column-gap: 42px;
     -moz-column-gap: 42px;
     column-gap: 42px;
-    row-gap: 16px;
+    row-gap: 12px;
   }
 
   .reviews__image-wrapper {
@@ -4743,14 +4737,6 @@ button,
 
   .subscription__image {
     bottom: -151px;
-  }
-
-  .subscription__list::after {
-    height: 2px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
   }
 
   .subscription__sub-list {
