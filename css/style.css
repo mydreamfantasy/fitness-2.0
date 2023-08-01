@@ -3205,7 +3205,7 @@ button,
 }
 
 .reviews {
-  padding: 62px 0 26px;
+  padding: 62px 0 70px;
   position: relative;
   max-width: 700px;
   margin: 0 auto;
@@ -3637,12 +3637,12 @@ button,
 
 .slider-control.is-reviews .swiper-button-prev {
   left: 3px;
-  top: 60%;
+  top: 63%;
 }
 
 .slider-control.is-reviews .swiper-button-next {
   right: 3px;
-  top: 60%;
+  top: 63%;
 }
 
 .accordion__wrapper p {
