@@ -204,10 +204,13 @@
 
     @media (min-width: $vp-768) {
       line-height: 113%;
+      margin-top: 2px;
+      margin-left: -5px;
     }
 
     @media (min-width: $vp-1200) {
       line-height: 124%;
+      margin: 0;
     }
   }
 }
@@ -227,6 +230,7 @@
       text-align: center;
       color: $color-default-white;
       padding-bottom: 17px;
+      letter-spacing: 1.2px;
     }
 
     @media (min-width: $vp-1200) {
@@ -235,6 +239,7 @@
       padding-bottom: 30px;
       font-size: 26px;
       line-height: 150%;
+      letter-spacing: 0;
     }
   }
 

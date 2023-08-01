@@ -6,7 +6,7 @@
 
   @media (min-width: $vp-768) {
     padding: 100px 45px;
-    padding-bottom: 52px;
+    padding-bottom: 49px;
   }
 
   @media (min-width: $vp-1200) {
@@ -79,7 +79,7 @@
   transition: 1s ease-in-out;
 
   @media (min-width: $vp-768) {
-    gap: 46px;
+    gap: 53px;
   }
 }
 
@@ -102,7 +102,7 @@
     position: absolute;
     bottom: -15px;
     left: 0;
-    width: 185%;
+    width: 190%;
     height: 2px;
     background-color: #dedfe1;
   }
@@ -142,14 +142,38 @@
   }
 
   @media (min-width: $vp-768) {
-    font-size: 20px;
+    font-size: 18px;
 
     &::before {
-      bottom: -11px;
+      bottom: -14px;
     }
 
     &:last-of-type {
       padding-right: 0;
+    }
+
+    &:focus-visible,
+    &:hover {
+      color: $gym-color;
+
+      &::after,
+      &::before {
+        bottom: -14px;
+      }
+    }
+
+    &.is-active {
+      color: $gym-color;
+
+      &::after {
+        bottom: -14px;
+      }
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    &::before {
+      bottom: -11px;
     }
 
     &:focus-visible,
@@ -182,7 +206,7 @@
   gap: 33px;
 
   @media (min-width: $vp-768) {
-    padding: 42px 0;
+    padding: 47px 0;
     gap: 40px;
   }
 
@@ -198,24 +222,25 @@
 .subscription__sub-item {
   margin: 0;
   padding: 36px 32px;
+  display: block;
   padding-bottom: 47px;
   background-color: $color-default-white;
   border: 7px solid transparent;
-  transition: $trans-modal;
 
   &:hover,
   &:focus-visible,
+  &:focus,
   &:active {
     outline: none;
     border: 7px solid;
-    border-image: $red-blue-right;
+    border-image: linear-gradient(100deg, #ed0233 15%, #003eb7 80%);
     border-image-slice: 1;
 
     & .subscription__sub-button {
       border: none;
       padding: 26px 45px;
       color: $color-default-white;
-      background: $red-blue-right;
+      background: linear-gradient(100deg, #ed0233 15%, #003eb7 80%);
     }
   }
 
@@ -302,6 +327,7 @@
 
     @media (min-width: $vp-768) {
       font-size: 100px;
+      padding-left: 0;
     }
   }
 }
@@ -330,7 +356,7 @@
     border: none;
     padding: 26px 45px;
     color: $color-default-white;
-    background: $red-blue-right;
+    background: linear-gradient(100deg, #ed0233 15%, #003eb7 80%) t;
   }
 
   &:disabled {

@@ -224,8 +224,8 @@
 .main-gym__video-btn {
   position: absolute;
   content: "";
-  width: 100px;
-  height: 100px;
+  width: 73px;
+  height: 73px;
 
   border: none;
   background-color: inherit;
@@ -237,7 +237,7 @@
   z-index: 2;
   background-size: contain;
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1200) {
     width: 100px;
     height: 100px;
   }
@@ -245,7 +245,15 @@
   &:hover,
   &:focus {
     outline: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='49' stroke='%23102654' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='36' fill='white'/%3E%3Cpath d='M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z' fill='%23102654'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='73' height='73' viewBox='0 0 73 73' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='36.5' cy='36.5' r='35.5' stroke='url(%23paint0_linear_0_1)' stroke-opacity='0.2' stroke-width='2'/%3E%3Ccircle cx='36' cy='36' r='26' fill='url(%23paint1_linear_0_1)'/%3E%3Cpath d='M42 36L33 41.1962L33 30.8038L42 36Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_0_1' x1='14.435' y1='2.1949e-05' x2='77.2232' y2='7.77042' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23ED0233'/%3E%3Cstop offset='1' stop-color='%23003EB7'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_0_1' x1='10' y1='35.6533' x2='39.0231' y2='6.52189' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23003D85'/%3E%3Cstop offset='0.885417' stop-color='%23B80027'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  }
+
+  @media (min-width: $vp-1200) {
+    &:hover,
+    &:focus {
+      outline: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' fill='none'%3E%3Ccircle cx='50' cy='50' r='49' stroke='%23102654' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='36' fill='white'/%3E%3Cpath d='M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z' fill='%23102654'/%3E%3C/svg%3E");
+    }
   }
 
   &:active {
