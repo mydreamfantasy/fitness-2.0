@@ -5028,7 +5028,7 @@ button,
 
 .slider-control.is-reviews .swiper-button-prev {
   left: 3px;
-  top: 54%;
+  top: 60%;
 }
 @media (min-width: 768px) {
   .slider-control.is-reviews .swiper-button-prev {
@@ -5045,7 +5045,7 @@ button,
 
 .slider-control.is-reviews .swiper-button-next {
   right: 3px;
-  top: 54%;
+  top: 60%;
 }
 @media (min-width: 768px) {
   .slider-control.is-reviews .swiper-button-next {
