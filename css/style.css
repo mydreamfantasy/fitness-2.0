@@ -3637,12 +3637,12 @@ button,
 
 .slider-control.is-reviews .swiper-button-prev {
   left: 3px;
-  top: 63%;
+  top: 60%;
 }
 
 .slider-control.is-reviews .swiper-button-next {
   right: 3px;
-  top: 63%;
+  top: 60%;
 }
 
 .accordion__wrapper p {
